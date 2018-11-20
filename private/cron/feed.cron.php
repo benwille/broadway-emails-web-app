@@ -1,9 +1,12 @@
 <?php require_once('../initialize.php'); ?>
 
 <?php
-if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/index.php'));
-  }
+if(isset($argv[1])) {
+	$_GET['station'] = $argv[1];
+}
+else {
+	redirect_to(url_for('/staff/index.php'));
+}
   $station = $_GET['station'];
   foreach(Email::STATION_URL as $station_id => $station_url) {
     if($station == $station_id) {
