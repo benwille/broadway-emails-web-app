@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+admin	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $admin = Admin::find_by_username($session->username);$/;"	variable	line:4
+current_page	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $current_page = $_GET['page'] ?? 1;$/;"	variable	line:6
+per_page	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $per_page = 20;$/;"	variable	line:7
+total_count	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $total_count = Email::count_all();$/;"	variable	line:8
+pagination	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $pagination = new Pagination($current_page, $per_page, $total_count);$/;"	variable	line:10
+sql	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $sql = "SELECT * FROM posts ";$/;"	variable	line:15
+posts	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $posts = Email::find_by_sql($sql);$/;"	variable	line:21
+sql	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $sql = "SELECT * FROM posts ";$/;"	variable	line:23
+featured	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $featured = Email::find_by_sql($sql);$/;"	variable	line:27
+sql	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $sql = "SELECT * FROM posts ";$/;"	variable	line:29
+news	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^  $news = Email::find_by_sql($sql);$/;"	variable	line:33
+args	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^    $args = $_POST['post'];$/;"	variable	line:40
+id	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^    $id = $_GET['id'];$/;"	variable	line:41
+post	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^    $post = Email::find_by_id($id);$/;"	variable	line:42
+result	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^    $result = $post->save();$/;"	variable	line:45
+new_id	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^      \/\/ $new_id = $task->id;$/;"	variable	line:47
+post	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^    $post = new Email;$/;"	variable	line:59
+page_title	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^<?php $page_title = 'X96 Posts'; ?>$/;"	variable	line:64
+category_id	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^              <?php foreach(Email::CATEGORY as $category_id => $category_name) { ?>$/;"	variable	line:122
+category_id	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^              <?php foreach(Email::CATEGORY as $category_id => $category_name) { ?>$/;"	variable	line:167
+category_id	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^              <?php foreach(Email::CATEGORY as $category_id => $category_name) { ?>$/;"	variable	line:212
+url	/Users/bwille/Sites/Broadway/emails/public/staff/x96/index.php	/^$url = url_for('\/staff\/x96\/index.php');$/;"	variable	line:237

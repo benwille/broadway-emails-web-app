@@ -1,0 +1,14 @@
+h2 a,
+h4 a {
+  color: #ED1749;
+}
+
+h2 a:hover,
+h4 a:hover,
+a:hover {
+  color: #f35e81;
+}
+
+footer {
+  background: #ED1749;
+}
