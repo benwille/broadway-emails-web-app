@@ -18,7 +18,7 @@ if(is_post_request()) {
     <title>Email <?php if(isset($page_title)) { echo '- ' . h($page_title); } ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <style type="text/css">
       <?php
       include PUBLIC_PATH . '/stylesheets/custom.bootstrap.min.css';
