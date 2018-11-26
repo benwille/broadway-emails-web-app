@@ -4,7 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-station	/Users/bwille/Sites/Broadway/emails/public/staff/emails/delete.php	/^$station = $_GET['station'];$/;"	variable	line:14
-id	/Users/bwille/Sites/Broadway/emails/public/staff/emails/delete.php	/^$id = $_GET['id'];$/;"	variable	line:15
-post	/Users/bwille/Sites/Broadway/emails/public/staff/emails/delete.php	/^$post = Email::find_by_id($id);$/;"	variable	line:16
-page_title	/Users/bwille/Sites/Broadway/emails/public/staff/emails/delete.php	/^<?php $page_title = 'Delete Post'; ?>$/;"	variable	line:34
+preference	/Users/bwille/Sites/Broadway/emails/private/shared/public_header.php	/^  $preference = $_POST['preference'] ?? 'Any';$/;"	variable	line:6
+expire	/Users/bwille/Sites/Broadway/emails/private/shared/public_header.php	/^  $expire = time() + 60*60*24*365;$/;"	variable	line:7
+preference	/Users/bwille/Sites/Broadway/emails/private/shared/public_header.php	/^  $preference = $_COOKIE['preference'] ?? 'Any';$/;"	variable	line:12

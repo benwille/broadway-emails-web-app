@@ -18,7 +18,7 @@ if(is_post_request()) {
     <title>Email <?php if(isset($page_title)) { echo '- ' . h($page_title); } ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <style type="text/css">
       <?php
       include PUBLIC_PATH . '/stylesheets/custom.bootstrap.min.css';
@@ -29,13 +29,13 @@ if(is_post_request()) {
 
   <body>
 
-    <header>
+    <div class="header">
       <div class="container">
         <div class="text-center">
           <img src="http://bwaymedia.wpengine.com/wp-content/uploads/2018/11/<?php echo $stationName;?>_logo.png" alt="logo" />
         </div>
 
       </div>
-    </header><!-- Header Container -->
+    </div><!-- Header Container -->
 
     <div class="container">

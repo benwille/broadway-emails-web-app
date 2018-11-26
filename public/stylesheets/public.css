@@ -43,14 +43,14 @@ body {
   background: #EDEEF0;
 }
 
-header {
+.header {
   height: auto;
   margin: 1em 0;
   padding: 0;
   color: white;
 }
 
-header h1 a {
+.header h1 a {
   text-decoration: none;
   color: #000;
   letter-spacing: 0.4em;
