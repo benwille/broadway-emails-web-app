@@ -109,8 +109,8 @@
     }
   }
 
-  function is_unique_article($title, $current_id="0") {
-    $article = Email::find_by_title($title);
+  function is_unique_article($link, $current_id="0") {
+    $article = Email::find_by_link($link);
     if ($article === false  || $article->id == $current_id) {
       //is unique
       return true;

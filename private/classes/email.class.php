@@ -115,6 +115,17 @@ class Email extends DatabaseObject {
       return false;
     }
   }
+
+  static public function find_by_link($link) {
+    $sql = "SELECT * FROM " . static::$table_name . " ";
+    $sql .= "WHERE link='" . self::$database->escape_string($link) . "'";
+    $obj_array = static::find_by_sql($sql);
+    if (!empty($obj_array)) {
+      return array_shift($obj_array);
+    } else {
+      return false;
+    }
+  }
   //
   // public function shift_errors_array() {
   //   global $errors;
@@ -233,7 +244,7 @@ class Email extends DatabaseObject {
   protected function validate() {
     $this->errors = [];
 
-    if (!is_unique_article($this->title, $this->id ?? 0)) {
+    if (!is_unique_article($this->link, $this->id ?? 0)) {
       $this->errors[] = "1 or more articles have already been uploaded.";
     }
 
