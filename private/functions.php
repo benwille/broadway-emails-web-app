@@ -20,6 +20,10 @@ function h($string="") {
   return htmlspecialchars($string);
 }
 
+function h_decode($string="") {
+  return htmlspecialchars_decode($string);
+}
+
 function error_404() {
   header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
   exit();

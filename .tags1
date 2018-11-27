@@ -4,6 +4,15 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-preference	/Users/bwille/Sites/Broadway/emails/private/shared/public_header.php	/^  $preference = $_POST['preference'] ?? 'Any';$/;"	variable	line:6
-expire	/Users/bwille/Sites/Broadway/emails/private/shared/public_header.php	/^  $expire = time() + 60*60*24*365;$/;"	variable	line:7
-preference	/Users/bwille/Sites/Broadway/emails/private/shared/public_header.php	/^  $preference = $_COOKIE['preference'] ?? 'Any';$/;"	variable	line:12
+station	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^  $station = $_GET['station'];$/;"	variable	line:9
+station_id	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^  foreach(Email::STATION as $station_id => $station_name) {$/;"	variable	line:10
+stationName	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^    $stationName = $station_name;$/;"	variable	line:12
+station_id	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^  foreach(Email::STATION_URL as $station_id => $station_url) {$/;"	variable	line:16
+stationURL	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^    $stationURL = "https:\/\/www." . $station_url . ".com\/";$/;"	variable	line:18
+page_title	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^<?php $page_title = $stationName . ' Email'; ?>$/;"	variable	line:25
+x	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^      $x = first_position($featured);$/;"	variable	line:32
+i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^            foreach ($featured as $i => $post) {$/;"	variable	line:57
+i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^          foreach ($sports_post as $i => $post) {$/;"	variable	line:110
+category_url	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^      $category_url = $stationURL . 'category\/' . $post[0]->category();$/;"	variable	line:143
+i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^          foreach ($post as $i => $post) {$/;"	variable	line:172
+i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^          foreach ($latest as $i => $post) {$/;"	variable	line:213
