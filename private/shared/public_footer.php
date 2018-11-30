@@ -1,6 +1,7 @@
 
-</div> <!--end container-->
+</table>
 
+</center>
   </body>
 
 </html>

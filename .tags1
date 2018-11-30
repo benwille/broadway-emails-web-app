@@ -4,15 +4,172 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-station	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^  $station = $_GET['station'];$/;"	variable	line:9
-station_id	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^  foreach(Email::STATION as $station_id => $station_name) {$/;"	variable	line:10
-stationName	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^    $stationName = $station_name;$/;"	variable	line:12
-station_id	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^  foreach(Email::STATION_URL as $station_id => $station_url) {$/;"	variable	line:16
-stationURL	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^    $stationURL = "https:\/\/www." . $station_url . ".com\/";$/;"	variable	line:18
-page_title	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^<?php $page_title = $stationName . ' Email'; ?>$/;"	variable	line:25
-x	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^      $x = first_position($featured);$/;"	variable	line:32
-i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^            foreach ($featured as $i => $post) {$/;"	variable	line:57
-i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^          foreach ($sports_post as $i => $post) {$/;"	variable	line:110
-category_url	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^      $category_url = $stationURL . 'category\/' . $post[0]->category();$/;"	variable	line:143
-i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^          foreach ($post as $i => $post) {$/;"	variable	line:172
-i	/Users/bwille/Sites/Broadway/emails/public/staff/emails/email.php	/^          foreach ($latest as $i => $post) {$/;"	variable	line:213
+.card-footer:after, .card-footer:before	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.card-footer:after, .card-footer:before {$/;"	function	line:1
+.card-footer:after	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.card-footer:after {$/;"	function	line:9
+.card-footer:before	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.card-footer:before {$/;"	function	line:16
+.see-all	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.see-all {$/;"	function	line:23
+.section-title	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.section-title {$/;"	function	line:28
+@media only screen and (min-width: 499px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (min-width: 499px) {$/;"	function	line:34
+.d-sm	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^  .d-sm {$/;"	function	line:35
+.d-sm-none	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^  .d-sm-none {$/;"	function	line:39
+.d-sm-none	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.d-sm-none {$/;"	function	line:44
+p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^p {$/;"	function	line:48
+table	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^table {$/;"	function	line:53
+h1	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h1,$/;"	function	line:57
+h2	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h2,$/;"	function	line:58
+h3	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h3,$/;"	function	line:59
+h4	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h4,$/;"	function	line:60
+h5	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h5,$/;"	function	line:61
+h6	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h6 {$/;"	function	line:62
+img	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^img,$/;"	function	line:68
+a img	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a img {$/;"	function	line:69
+body	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^body,$/;"	function	line:76
+#bodyTable	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#bodyTable,$/;"	function	line:77
+#bodyCell	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#bodyCell {$/;"	function	line:78
+.mcnPreviewText	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnPreviewText {$/;"	function	line:85
+#outlook a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#outlook a {$/;"	function	line:89
+img	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^img {$/;"	function	line:93
+table	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^table {$/;"	function	line:97
+.ReadMsgBody	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ReadMsgBody {$/;"	function	line:102
+.ExternalClass	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass {$/;"	function	line:106
+p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^p,$/;"	function	line:110
+a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a,$/;"	function	line:111
+li	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^li,$/;"	function	line:112
+td	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^td,$/;"	function	line:113
+blockquote	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^blockquote {$/;"	function	line:114
+a[href^=tel]	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a[href^=tel],$/;"	function	line:118
+a[href^=sms]	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a[href^=sms] {$/;"	function	line:119
+p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^p,$/;"	function	line:125
+a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a,$/;"	function	line:126
+li	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^li,$/;"	function	line:127
+td	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^td,$/;"	function	line:128
+body	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^body,$/;"	function	line:129
+table	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^table,$/;"	function	line:130
+blockquote	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^blockquote {$/;"	function	line:131
+.ExternalClass	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass,$/;"	function	line:136
+.ExternalClass p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass p,$/;"	function	line:137
+.ExternalClass td	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass td,$/;"	function	line:138
+.ExternalClass div	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass div,$/;"	function	line:139
+.ExternalClass span	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass span,$/;"	function	line:140
+.ExternalClass font	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.ExternalClass font {$/;"	function	line:141
+a[x-apple-data-detectors]	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a[x-apple-data-detectors] {$/;"	function	line:145
+#bodyCell	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#bodyCell {$/;"	function	line:154
+.templateContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.templateContainer {$/;"	function	line:158
+a.mcnButton	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a.mcnButton {$/;"	function	line:163
+.mcnImage	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImage,$/;"	function	line:167
+.mcnRetinaImage	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnRetinaImage {$/;"	function	line:168
+.mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnTextContent {$/;"	function	line:172
+.mcnTextContent img	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnTextContent img {$/;"	function	line:176
+.mcnDividerBlock	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnDividerBlock {$/;"	function	line:180
+body	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^body,$/;"	function	line:184
+#bodyTable	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#bodyTable {$/;"	function	line:185
+#bodyCell	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#bodyCell {$/;"	function	line:189
+.templateContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.templateContainer {$/;"	function	line:193
+h1	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h1 {$/;"	function	line:197
+h2	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h2 {$/;"	function	line:208
+h3	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h3 {$/;"	function	line:219
+h4	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h4 {$/;"	function	line:230
+#templatePreheader	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader {$/;"	function	line:241
+#templatePreheader .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader .mcnTextContent,$/;"	function	line:253
+#templatePreheader .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader .mcnTextContent p {$/;"	function	line:254
+#templatePreheader .mcnTextContent a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader .mcnTextContent a,$/;"	function	line:262
+#templatePreheader .mcnTextContent p a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader .mcnTextContent p a {$/;"	function	line:263
+#templateHeader	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader {$/;"	function	line:269
+#templateHeader .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader .mcnTextContent,$/;"	function	line:281
+#templateHeader .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader .mcnTextContent p {$/;"	function	line:282
+#templateHeader .mcnTextContent a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader .mcnTextContent a,$/;"	function	line:290
+#templateHeader .mcnTextContent p a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader .mcnTextContent p a {$/;"	function	line:291
+#templateBody	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody {$/;"	function	line:297
+#templateBody .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody .mcnTextContent,$/;"	function	line:309
+#templateBody .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody .mcnTextContent p {$/;"	function	line:310
+#templateBody .mcnTextContent a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody .mcnTextContent a,$/;"	function	line:318
+#templateBody .mcnTextContent p a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody .mcnTextContent p a {$/;"	function	line:319
+#templateFooter	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter {$/;"	function	line:325
+#templateFooter .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter .mcnTextContent,$/;"	function	line:337
+#templateFooter .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter .mcnTextContent p {$/;"	function	line:338
+#templateFooter .mcnTextContent a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter .mcnTextContent a,$/;"	function	line:346
+#templateFooter .mcnTextContent p a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter .mcnTextContent p a {$/;"	function	line:347
+@media only screen and (min-width:900px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (min-width:900px) {$/;"	function	line:353
+.templateContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.templateContainer {$/;"	function	line:354
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:360
+body	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^body,$/;"	function	line:362
+table	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^table,$/;"	function	line:363
+td	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^td,$/;"	function	line:364
+p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^p,$/;"	function	line:365
+a	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^a,$/;"	function	line:366
+li	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^li,$/;"	function	line:367
+blockquote	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^blockquote {$/;"	function	line:368
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:374
+body	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^body {$/;"	function	line:375
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:382
+#bodyCell	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#bodyCell {$/;"	function	line:383
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:389
+.mcnRetinaImage	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnRetinaImage {$/;"	function	line:390
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:396
+.mcnImage	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImage {$/;"	function	line:397
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:403
+.mcnCartContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCartContainer,$/;"	function	line:405
+.mcnCaptionTopContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionTopContent,$/;"	function	line:406
+.mcnRecContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnRecContentContainer,$/;"	function	line:407
+.mcnCaptionBottomContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionBottomContent,$/;"	function	line:408
+.mcnTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnTextContentContainer,$/;"	function	line:409
+.mcnBoxedTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnBoxedTextContentContainer,$/;"	function	line:410
+.mcnImageGroupContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageGroupContentContainer,$/;"	function	line:411
+.mcnCaptionLeftTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionLeftTextContentContainer,$/;"	function	line:412
+.mcnCaptionRightTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionRightTextContentContainer,$/;"	function	line:413
+.mcnCaptionLeftImageContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionLeftImageContentContainer,$/;"	function	line:414
+.mcnCaptionRightImageContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionRightImageContentContainer,$/;"	function	line:415
+.mcnImageCardLeftTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardLeftTextContentContainer,$/;"	function	line:416
+.mcnImageCardRightTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardRightTextContentContainer,$/;"	function	line:417
+.mcnImageCardLeftImageContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardLeftImageContentContainer,$/;"	function	line:418
+.mcnImageCardRightImageContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardRightImageContentContainer {$/;"	function	line:419
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:426
+.mcnBoxedTextContentContainer	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnBoxedTextContentContainer {$/;"	function	line:427
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:433
+.mcnImageGroupContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageGroupContent {$/;"	function	line:434
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:440
+.mcnCaptionLeftContentOuter .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionLeftContentOuter .mcnTextContent,$/;"	function	line:442
+.mcnCaptionRightContentOuter .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionRightContentOuter .mcnTextContent {$/;"	function	line:443
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:449
+.mcnImageCardTopImageContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardTopImageContent,$/;"	function	line:451
+.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent,$/;"	function	line:452
+.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent {$/;"	function	line:453
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:459
+.mcnImageCardBottomImageContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardBottomImageContent {$/;"	function	line:460
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:466
+.mcnImageGroupBlockInner	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageGroupBlockInner {$/;"	function	line:467
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:474
+.mcnImageGroupBlockOuter	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageGroupBlockOuter {$/;"	function	line:475
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:482
+.mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnTextContent,$/;"	function	line:484
+.mcnBoxedTextContentColumn	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnBoxedTextContentColumn {$/;"	function	line:485
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:492
+.mcnImageCardLeftImageContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardLeftImageContent,$/;"	function	line:494
+.mcnImageCardRightImageContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnImageCardRightImageContent {$/;"	function	line:495
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:503
+.mcpreview-image-uploader	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcpreview-image-uploader {$/;"	function	line:504
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:511
+h1	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h1 {$/;"	function	line:512
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:519
+h2	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h2 {$/;"	function	line:520
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:527
+h3	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h3 {$/;"	function	line:528
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:535
+h4	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^h4 {$/;"	function	line:536
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:543
+.mcnBoxedTextContentContainer .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnBoxedTextContentContainer .mcnTextContent,$/;"	function	line:545
+.mcnBoxedTextContentContainer .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^.mcnBoxedTextContentContainer .mcnTextContent p {$/;"	function	line:546
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:553
+#templatePreheader	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader {$/;"	function	line:554
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:560
+#templatePreheader .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader .mcnTextContent,$/;"	function	line:562
+#templatePreheader .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templatePreheader .mcnTextContent p {$/;"	function	line:563
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:570
+#templateHeader .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader .mcnTextContent,$/;"	function	line:572
+#templateHeader .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateHeader .mcnTextContent p {$/;"	function	line:573
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:580
+#templateBody .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody .mcnTextContent,$/;"	function	line:582
+#templateBody .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateBody .mcnTextContent p {$/;"	function	line:583
+@media only screen and (max-width: 480px)	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^@media only screen and (max-width: 480px) {$/;"	function	line:590
+#templateFooter .mcnTextContent	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter .mcnTextContent,$/;"	function	line:592
+#templateFooter .mcnTextContent p	/Users/bwille/Sites/Broadway/emails/public/stylesheets/mailchimp.css	/^#templateFooter .mcnTextContent p {$/;"	function	line:593
