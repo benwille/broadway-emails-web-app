@@ -90,7 +90,7 @@
         </div>
       </form>
       <div class="ml-auto">
-        <a class="btn btn-primary" href="email.php?station=<?php echo $station; ?>" target="_blank">Create Email</a>
+        <a class="btn btn-primary" href="<?php echo url_for("/index.php?station=") . $station; ?>" target="_blank">Create Email</a>
       </div>
     </div><!-- Clear Buttons -->
 
