@@ -27,190 +27,75 @@
 <?php $page_title = $stationName . ' Email'; ?>
 <?php include(SHARED_PATH . '/public_header2.php'); ?>
 
-<tr><!--Section-->
-  <?php
-  if ($featured) {
-    $x = first_position($featured);
-  ?>
-  <td valign="top" id="templateBody" style="background:#ffffff none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border: 1px solid #EAEAEA;padding-top: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea; text-transform: uppercase;"><!--text block header-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner section-title" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; background-color: rgba(0,0,0,0.03);">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                Featured
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-  				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-  				<tr>
-  				<![endif]-->
-
-  				<!--[if mso]>
-  				<td valign="top" width="600" style="width:600px;">
-  				<![endif]-->
-        </td>
-      </tr>
-    </table><!--text block header-->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--image block-->
-      <tr>
-        <td valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
-          <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--image content-->
-            <tr>
-              <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; ">
-                <a href="<?php echo $featured[0]->link ?>" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                  <img class="card-img" src="<?php echo $featured[0]->imageLink ?>" alt="<?php echo h_decode($featured[0]->title) ?>" style="padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
-                </a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table><!--main image block-->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <h2 class="card-title"><a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a></h2>
-                <p class="card-text"><?php echo h_decode($featured[0]->excerpt); ?></p>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-  				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-  				<tr>
-  				<![endif]-->
-
-  				<!--[if mso]>
-  				<td valign="top" width="600" style="width:600px;">
-  				<![endif]-->
-        </td>
-      </tr>
-    </table><!--text block-->
-    <?php if ($featured) {
-      foreach ($featured as $i => $post) {
-        if ($i == 0) {
-          continue;
-        }
-        if ($i == 1) { ?>
-    <table border="0" cellpadding="10" cellspacing="10" width="100%" class="mcnTextBlock d-sm-none" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block + image-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 18px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; ">
-                <a href="<?php echo $post->link; ?>"><img class="d-flex img-fluid rounded mr-3"  src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></a>
-              </td>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 0px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-  				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-  				<tr>
-  				<![endif]-->
-
-  				<!--[if mso]>
-  				<td valign="top" width="600" style="width:600px;">
-  				<![endif]-->
-        </td>
-      </tr>
-    </table><!--text block + image-->
-    <table border="0" cellpadding="10" cellspacing="10" width="100%" class="mcnTextBlock d-sm" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block + image-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 18px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                <a href="<?php echo $post->link; ?>"><img class="img-fluid rounded mr-3"  style="max-height:300px;" src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></a>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-  				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-  				<tr>
-  				<![endif]-->
-
-  				<!--[if mso]>
-  				<td valign="top" width="600" style="width:600px;">
-  				<![endif]-->
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 0px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-  				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-  				<tr>
-  				<![endif]-->
-
-  				<!--[if mso]>
-  				<td valign="top" width="600" style="width:600px;">
-  				<![endif]-->
-        </td>
-      </tr>
-    </table><!--text block + image-->
-    <?php } else { ?>
-      <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--text block-->
+<?php
+if ($featured) {
+  $x = first_position($featured);
+?>
+<tr><!-- Featured Section-->
+  <td valign="top" id="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
         <tr>
-          <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-            <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-            <tr>
-            <td align="center" valign="top" width="600" style="width:600px;">
-            <![endif]-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-              <!--text content-->
-              <tr>
-                <td valign="top" class="mcnTextContent" style="padding: 0px 18px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                  <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-                </td>
-              </tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                            <div style="text-align: left;">FEATURED</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
             </table>
-            <!--[if mso]>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $featured[0]->link ?>" title="<?php echo h_decode($featured[0]->title) ?>" class="" target="_blank">
+                      <img align="center" alt="<?php echo h_decode($featured[0]->title) ?>" src="<?php echo $featured[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
     				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
     				<tr>
     				<![endif]-->
@@ -218,18 +103,142 @@
     				<!--[if mso]>
     				<td valign="top" width="600" style="width:600px;">
     				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <h1>
+                      <a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a>
+                    </h1>
+                    <p>
+                      <?php echo h_decode($featured[0]->excerpt); ?>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
           </td>
         </tr>
-      </table><!--text block-->
+      </tbody>
+    </table>
+    <?php if ($featured) {
+      foreach ($featured as $i => $post) {
+        if ($i == 0) {
+          continue;
+        }
+        if ($i == 1) { ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+      <tbody class="mcnCaptionBlockOuter">
+        <tr>
+          <td class="mcnCaptionBlockInner" valign="top" style="padding:9px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnCaptionRightContentInner" style="padding:0 9px ;">
+                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="264">
+                      <tbody>
+                        <tr>
+                          <td class="mcnCaptionRightImageContent" align="center" valign="top">
+                            <a href="<?php echo $post->link; ?>">
+                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="264">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent">
+                            <h4 class="null">
+                              <a href="<?php echo $post->link; ?>">
+                                <?php echo h_decode($post->title); ?>
+                              </a>
+                            </h4>
+                            <p>
+                              <?php echo h_decode($post->excerpt); ?>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 9px 18px;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php } else { ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
+                    <a href="<?php echo $post->link; ?>">
+                      <?php echo h_decode($post->title); ?>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <?php }}} ?>
-  </td><!--featured section-->
-  <?php } ?>
-
-</tr><!--section-->
-
-<tr><!--spacer-->
-  <td height="20"></td>
-</tr><!--spacer-->
+  </td>
+</tr><!-- Featured Section-->
+<?php } ?>
 
 <?php
 if ($posts) {
@@ -238,101 +247,133 @@ if ($posts) {
     if ($post) {
     $category_url = $stationURL . 'category/' . $post[0]->category();
 ?>
-<tr><!--Section-->
-  <td valign="top" id="templateBody" style="background:#ffffff none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border: 1px solid #EAEAEA;padding-top: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block header-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner section-title" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; background-color: rgba(0,0,0,0.03); text-transform: uppercase;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <?php echo $post[0]->category(); ?>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
+<tr><!--Sections-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" width="390">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="390" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <div style="text-align: left;">
+                              <strong><?php echo $post[0]->category(); ?></strong>
+                            </div>
 
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; background-color: rgba(0,0,0,0.03);">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: right;">
-                <a class="card-link" href="<?php echo $category_url;?>" target="_blank">See All &raquo;</a>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
 
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block header-->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--image block-->
-      <tr>
-        <td valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
-          <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--image content-->
-            <tr>
-              <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; ">
-                <a href="<?php echo $post[0]->link ?>" target="_blank" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-                  <img class="card-img img-fluid mb-2 mb-lg-1" src="<?php echo $post[0]->imageLink ?>" alt="<?php echo h_decode($post[0]->title) ?>" style="padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
-                </a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table><!--main image block-->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <h2 class="card-title"><a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a></h2>
-                <p class="card-text"><?php echo h_decode($post[0]->excerpt); ?></p>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" width="210">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="210" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <a href="<?php echo $category_url;?>">
+                              <span>See All »</span>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
 
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block-->
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $post[0]->link ?>" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
+                      <img align="center" alt="<?php echo h_decode($post[0]->title) ?>" src="<?php echo $post[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <h1>
+                      <a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
+                    </h1>
+                    <p>
+                      <?php echo h_decode($post[0]->excerpt); ?>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <?php if ($post) {
       foreach ($post as $i => $post) {
         if ($i >= 6) {
@@ -342,286 +383,296 @@ if ($posts) {
           continue;
         }
         if ($i == 1) { ?>
-    <table border="0" cellpadding="10" cellspacing="10" width="100%" class="mcnTextBlock d-sm-none" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block + image-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 18px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; ">
-                <a href="<?php echo $post->link; ?>"><img class="d-flex img-fluid rounded mr-3" src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></a>
-              </td>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 0px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
-
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block + image-->
-    <table border="0" cellpadding="10" cellspacing="10" width="100%" class="mcnTextBlock d-sm" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block + image-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 18px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                <a href="<?php echo $post->link; ?>"><img style="max-height:300px" class="img-fluid rounded mr-3" src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></a>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
-
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 0px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
-
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block + image-->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+      <tbody class="mcnCaptionBlockOuter">
+        <tr>
+          <td class="mcnCaptionBlockInner" valign="top" style="padding:9px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnCaptionRightContentInner" style="padding:0 9px ;">
+                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="264">
+                      <tbody>
+                        <tr>
+                          <td class="mcnCaptionRightImageContent" align="center" valign="top">
+                            <a href="<?php echo $post->link; ?>">
+                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="264">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent">
+                            <h4 class="null">
+                              <a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
+                            </h4>
+                            <p>
+                              <?php echo h_decode($post->excerpt); ?>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 9px 18px;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <?php } else { ?>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; "><!--text block-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-              </td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
+                    <a href="<?php echo $post->link; ?>">
+                      <?php echo h_decode($post->title); ?>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <?php }}} ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if gte mso 9]>
             </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
-
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block-->
-    <?php }}} ?>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea; border-top: 1px solid #eaeaea;"><!--text block-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner see-all" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: center;">
-                <a class="card-link text-center" href="<?php echo $category_url;?>" target="_blank">See All &raquo;</a>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
-
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block-->
-  </td><!--section-->
-</tr><!--section-->
-
-<tr><!--spacer-->
-  <td height="20"></td>
-</tr><!--spacer-->
-
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Sections-->
 <?php }}} ?>
 
 <?php if ($latest) { ?>
-<tr><!--Section-->
-  <td valign="top" id="templateBody" style="background:#ffffff none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border: 1px solid #EAEAEA;padding-top: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea;"><!--text block header-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner section-title" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; background-color: rgba(0,0,0,0.03); text-transform: uppercase;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <span>Latest</span>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
+<tr><!--Latest-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" width="390">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="390" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <div style="text-align: left;"><strong>LATEST</strong></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
 
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; background-color: rgba(0,0,0,0.03);">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: right;">
-                <a class="card-link" href="<?php echo $category_url;?>" target="_blank">See All &raquo;</a>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" width="210">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="210" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <a href="<?php echo $category_url;?>">See All »</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
 
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block header-->
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <?php if ($latest) {
       foreach ($latest as $i => $post) {
         if ($i >= 6) {
           break;
     } ?>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--text block-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: left;">
-                <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
 
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block-->
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
+                    <a href="<?php echo $post->link; ?>">
+                      <?php echo h_decode($post->title); ?>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <?php }} ?>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-bottom: 1px solid #eaeaea; border-top: 1px solid #eaeaea;"><!--text block-->
-      <tr>
-        <td valign="top" class="mcnTextBlockInner see-all" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-          <tr>
-          <td align="center" valign="top" width="600" style="width:600px;">
-          <![endif]-->
-          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-            <!--text content-->
-            <tr>
-              <td valign="top" class="mcnTextContent" style="padding: 0px 18px;line-height: 125%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: rgb(33,37,41);  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;text-align: center;">
-                <a class="card-link text-center" href="<?php echo $category_url;?>" target="_blank">See All &raquo;</a>
-              </td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+    <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <![endif]-->
+      <tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+            <!--[if gte mso 9]>
+            <td align="center" valign="top" ">
+            <![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--[if gte mso 9]>
+            </td>
+            <![endif]-->
+
+            <!--[if gte mso 9]>
             </tr>
-          </table>
-          <!--[if mso]>
-          <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-          <tr>
-          <![endif]-->
-
-          <!--[if mso]>
-          <td valign="top" width="600" style="width:600px;">
-          <![endif]-->
-        </td>
-      </tr>
-    </table><!--text block-->
-  </td><!--section-->
-</tr><!--latest section-->
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Latest-->
 <?php } ?>
-
-</table><!--email body-->
-<!--[if mso]>
-				</td>
-				<![endif]-->
-
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-</td>
-</tr>
-
-
-
-
 
 <?php include(SHARED_PATH . '/public_footer.php'); ?>
