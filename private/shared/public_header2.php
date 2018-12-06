@@ -16,10 +16,10 @@
     <title>Email <?php if(isset($page_title)) { echo '- ' . h($page_title); } ?></title>
      <style type="text/css">
       <?php
-      //include PUBLIC_PATH . '/stylesheets/custom.bootstrap.min.css';
+      include PUBLIC_PATH . '/stylesheets/mailchimp.bootstrap.css';
       include PUBLIC_PATH . '/stylesheets/mailchimp.css';
-      //include PUBLIC_PATH . '/stylesheets/public.min.css';
-      // include PUBLIC_PATH . '/stylesheets/' . $stationName . '.css'; ?>
+      // include PUBLIC_PATH . '/stylesheets/public.min.css';
+      include PUBLIC_PATH . '/stylesheets/' . $stationName . '.css'; ?>
 
     </style>
   </head>

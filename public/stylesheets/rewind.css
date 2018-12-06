@@ -1,6 +1,6 @@
 h2 a,
 h4 a {
-  color: #ED1749;
+  color: #ED1749 !important;
 }
 
 h2 a:hover,

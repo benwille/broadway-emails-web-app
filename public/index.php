@@ -31,7 +31,7 @@ if ($featured) {
   $x = first_position($featured);
 ?>
 <tr><!-- Featured Section-->
-  <td valign="top" id="templateBody">
+  <td valign="top" id="templateBody" style="border-width: 1px 1px 2px 1px; border-style: solid; border-color: #EAEAEA;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
   	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -45,8 +45,8 @@ if ($featured) {
             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
               <tbody>
                 <tr>
-                  <td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
                       <tbody>
                         <tr>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
@@ -106,9 +106,9 @@ if ($featured) {
               <tbody>
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                    <h1>
+                    <h2>
                       <a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a>
-                    </h1>
+                    </h2>
                     <p>
                       <?php echo h_decode($featured[0]->excerpt); ?>
                     </p>
@@ -239,6 +239,32 @@ if ($featured) {
 </tr><!-- Featured Section-->
 <?php } ?>
 
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
+
 <?php
 if ($posts) {
   // var_dump($sports_posts);
@@ -247,7 +273,7 @@ if ($posts) {
     $category_url = $stationURL . 'category/' . $post[0]->category();
 ?>
 <tr><!--Sections-->
-  <td valign="top" class="templateBody">
+  <td valign="top" class="templateBody" style="border-width: 1px 1px 1px 1px; border-style: solid; border-color: #EAEAEA;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
   	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -256,43 +282,21 @@ if ($posts) {
         <tr>
           <td valign="top" class="mcnBoxedTextBlockInner">
     				<!--[if gte mso 9]>
-    				<td align="center" valign="top" width="390">
+    				<td align="center" valign="top" ">
     				<![endif]-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" width="390" class="mcnBoxedTextContentContainer">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
               <tbody>
                 <tr>
-                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
-                            <div style="text-align: left;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                            <div style="text-align: left; text-transform: uppercase;">
                               <strong><?php echo $post[0]->category(); ?></strong>
                             </div>
-
                           </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-    				<!--[if gte mso 9]>
-    				</td>
-    				<![endif]-->
-
-    				<!--[if gte mso 9]>
-    				<td align="center" valign="top" width="210">
-    				<![endif]-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" width="210" class="mcnBoxedTextContentContainer">
-              <tbody>
-                <tr>
-                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
-                      <tbody>
-                        <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
                             <a href="<?php echo $category_url;?>">
                               <span>See All »</span>
                             </a>
@@ -351,9 +355,9 @@ if ($posts) {
               <tbody>
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                    <h1>
+                    <h2>
                       <a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
-                    </h1>
+                    </h2>
                     <p>
                       <?php echo h_decode($post[0]->excerpt); ?>
                     </p>
@@ -494,8 +498,8 @@ if ($posts) {
             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
               <tbody>
                 <tr>
-                  <td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border-width: 1px 0; border-style: solid; border-color: #EAEAEA;">
                       <tbody>
                         <tr>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
@@ -522,11 +526,37 @@ if ($posts) {
     </table>
   </td>
 </tr><!--Sections-->
+
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
 <?php }}} ?>
 
 <?php if ($latest) { ?>
 <tr><!--Latest-->
-  <td valign="top" class="templateBody">
+  <td valign="top" class="templateBody" style="border: 1px solid #EAEAEA;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
   	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -534,42 +564,25 @@ if ($posts) {
     	<tbody class="mcnBoxedTextBlockOuter">
         <tr>
           <td valign="top" class="mcnBoxedTextBlockInner">
-    				<!--[if gte mso 9]>
-    				<td align="center" valign="top" width="390">
+            <!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
     				<![endif]-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" width="390" class="mcnBoxedTextContentContainer">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
               <tbody>
                 <tr>
-                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
-                            <div style="text-align: left;"><strong>LATEST</strong></div>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                            <div style="text-align: left; text-transform: uppercase;">
+                              <strong>LATEST</strong>
+                            </div>
                           </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-    				<!--[if gte mso 9]>
-    				</td>
-    				<![endif]-->
-
-    				<!--[if gte mso 9]>
-    				<td align="center" valign="top" width="210">
-    				<![endif]-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" width="210" class="mcnBoxedTextContentContainer">
-              <tbody>
-                <tr>
-                  <td class="mcnBoxedTextContentColumn" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
-                      <tbody>
-                        <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
-                            <a href="<?php echo $category_url;?>">See All »</a>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
+                            <a href="<?php echo $category_url;?>">
+                              <span>See All »</span>
+                            </a>
                           </td>
                         </tr>
                       </tbody>
@@ -644,8 +657,8 @@ if ($posts) {
             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
               <tbody>
                 <tr>
-                  <td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border: 1px solid #EAEAEA;">
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border-width: 1px 0; border-style: solid; border-color: #EAEAEA;">
                       <tbody>
                         <tr>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">

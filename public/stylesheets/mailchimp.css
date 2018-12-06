@@ -1,3 +1,7 @@
+a {
+  color: #2a3141;
+}
+
 p{
 			margin:10px 0;
 			padding:0;
@@ -22,7 +26,7 @@ p{
 			padding:0;
 			width:100%;
 		}
-		[owa] #bodyTable{
+		#bodyTable{
 			max-width: 600px;
 		}
 		.mcnPreviewText{
@@ -212,7 +216,7 @@ p{
 		#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p a{
 			/*@editable*/color:#656565;
 			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*@editable*/text-decoration:none;
 		}
 	/*
 	@tab Header
@@ -250,7 +254,7 @@ p{
 		#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
 			/*@editable*/color:#2BAADF;
 			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*@editable*/text-decoration:none;
 		}
 	/*
 	@tab Body
@@ -264,9 +268,7 @@ p{
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:2px solid #EAEAEA;
 			/*@editable*/padding-top:0;
-			/*@editable*/padding-bottom:9px;
 		}
 	/*
 	@tab Body
@@ -286,9 +288,9 @@ p{
 	@tip Set the styling for your email's body links. Choose a color that helps them stand out from your text.
 	*/
 		#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
-			/*@editable*/color:#2BAADF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*@editable*/color:#2a3141;
+			/*@editable*/font-weight:inherit;
+			/*@editable*/text-decoration:none;
 		}
 	/*
 	@tab Footer
@@ -326,7 +328,7 @@ p{
 		#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
 			/*@editable*/color:#656565;
 			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*@editable*/text-decoration:none;
 		}
 	@media only screen and (min-width:768px){
 		.templateContainer{
