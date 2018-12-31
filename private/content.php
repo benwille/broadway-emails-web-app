@@ -7,9 +7,9 @@ $sql .= "ORDER BY ISNULL(position), position ASC, pubDate DESC ";
 $featured = Email::find_by_sql($sql);
 
 $posts = array (
+  $contests = Email::post_query($station, 3, 0),
   $news = Email::post_query($station, 1, 0),
-  $life = Email::post_query($station, 2, 0),
-  $contests = Email::post_query($station, 3, 0)
+  $life = Email::post_query($station, 2, 0)
 );
 
 $latest = Email::post_query($station, 0, 0);
