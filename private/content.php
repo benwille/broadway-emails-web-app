@@ -3,7 +3,7 @@
 $sql = "SELECT * FROM posts ";
 $sql .= "WHERE station=" . $station . " ";
 $sql .= "AND featured=1 ";
-$sql .= "ORDER BY ISNULL(position), position ASC, pubDate DESC ";
+$sql .= "ORDER BY position = 0, position ASC, pubDate DESC ";
 $featured = Email::find_by_sql($sql);
 
 $posts = array (
