@@ -130,8 +130,8 @@
             </td>
             <td class="align-middle"><a class="action" href="<?php echo $post->link; ?>" target="_blank">View</a></td>
             <?php if ($admin->is_admin()) { ?>
-            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/posts/edit.php?id=' . h(u($post->id))); ?>">Edit</a></td>
-            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/posts/delete.php?id=' . h(u($post->id))); ?>">Delete</a></td>
+            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/edit.php?id=' . h(u($post->id))); ?>">Edit</a></td>
+            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/delete.php?id=' . h(u($post->id))); ?>">Delete</a></td>
             <td class="align-middle"><input type="submit" value="Update" /></td>
             <?php } ?>
             </form>
