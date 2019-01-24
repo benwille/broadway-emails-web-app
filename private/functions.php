@@ -20,6 +20,10 @@ function h($string="") {
   return htmlspecialchars($string);
 }
 
+function hd($string="") {
+  return htmlspecialchars_decode($string);
+}
+
 function h_decode($string="") {
   return htmlspecialchars_decode($string);
 }
