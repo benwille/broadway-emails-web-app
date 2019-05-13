@@ -4,7 +4,7 @@
 
 <?php
   if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/emails/index.php'));
+  redirect_to(url_for('/staff/emails/'));
   }
   $station = $_GET['station'];
   foreach(Email::STATION as $station_id => $station_name) {
@@ -27,7 +27,6 @@
 
 <?php
 if ($featured) {
-  $x = first_position($featured);
 ?>
 <tr><!-- Featured Section-->
   <td valign="top" id="templateBody" style="border-width: 1px 1px 2px 1px; border-style: solid; border-color: #EAEAEA;">

@@ -32,12 +32,12 @@
       </li>
     </ol>
     <nav class="mt-5 nav flex-row justify-content-around nav-pills">
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=1'); ?>">X96</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=2'); ?>">Mix</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=3'); ?>">U92</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=4'); ?>">Rewind</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=5'); ?>">Eagle</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=6'); ?>">ESPN</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/?station=1'); ?>">X96</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/?station=2'); ?>">Mix</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/?station=3'); ?>">U92</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/?station=4'); ?>">Rewind</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/?station=5'); ?>">Eagle</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/?station=6'); ?>">ESPN</a>
     </nav>
     <!-- <ul>
       <li><a href="<?php //echo url_for('/staff/tasks/index.php'); ?>">Tasks</a></li>

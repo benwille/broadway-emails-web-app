@@ -4,7 +4,7 @@
   $admin = Admin::find_by_username($session->username);
 
   if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/index.php'));
+  redirect_to(url_for('/staff/'));
   }
   $station = $_GET['station'];
   foreach(Email::STATION as $station_id => $station_name) {
@@ -41,7 +41,7 @@
       // $new_id = $task->id;
       // echo 'The post was updated successfully.';
       $session->message('The post was updated successfully.');
-      redirect_to(url_for('/staff/emails/index.php?station=' . $station));
+      redirect_to(url_for('/staff/emails/?station=' . $station));
 
 
     } else {
@@ -67,7 +67,7 @@
       <div class="ml-1">
         <a class="btn btn-primary" href="<?php echo url_for("staff/emails/new.php?station=") . $station; ?>">New Post</a>
       </div>
-      <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
+      <form action="<?php echo url_for('/staff/emails/clear?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
             <input type="hidden" name="post[position]" value="0" />
@@ -75,7 +75,7 @@
           </div>
         </div>
       </form>
-      <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
+      <form action="<?php echo url_for('/staff/emails/clear?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
             <input type="hidden" name="post[featured]" value='0' />
@@ -83,7 +83,7 @@
           </div>
         </div>
       </form>
-      <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
+      <form action="<?php echo url_for('/staff/emails/clear?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
             <input type="hidden" name="post[featured]" value="0" />
@@ -93,7 +93,7 @@
         </div>
       </form>
       <div class="ml-auto">
-        <a class="btn btn-primary" href="<?php echo url_for("/index.php?station=") . $station; ?>" target="_blank">Create Email</a>
+        <a class="btn btn-primary" href="<?php echo "email?station=" . $station; ?>" target="_blank">Create Email</a>
       </div>
     </div><!-- Clear Buttons -->
 

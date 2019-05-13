@@ -2,7 +2,7 @@
 // prevents this code from being loaded directly in the browser
 // or without first setting the necessary object
 if(!isset($post)) {
-  redirect_to(url_for('/staff/emails/index.php?station=' . h($station)));
+  redirect_to(url_for('/staff/emails/?station=' . h($station)));
 }
 $post->station = $station;
 date_default_timezone_set("America/Denver");

@@ -4,9 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-args	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $args = $_POST['admin'];$/;"	variable	line:10
-admin	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $admin = new Admin($args);$/;"	variable	line:11
-result	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $result = $admin->save();$/;"	variable	line:12
-new_id	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^    $new_id = $admin->id;$/;"	variable	line:17
-admin	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $admin = new Admin;$/;"	variable	line:26
-page_title	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^<?php $page_title = 'Create Admin'; ?>$/;"	variable	line:31
+errors	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^$errors = [];$/;"	variable	line:4
+username	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^$username = '';$/;"	variable	line:5
+password	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^$password = '';$/;"	variable	line:6
+username	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^  $username = $_POST['username'] ?? '';$/;"	variable	line:10
+password	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^  $password = $_POST['password'] ?? '';$/;"	variable	line:11
+admin	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^    $admin = Admin::find_by_username($username);$/;"	variable	line:23
+page_title	/Users/bwille/Sites/Broadway/emails/dist/html/staff/login.php	/^<?php $page_title = 'Log in'; ?>$/;"	variable	line:40

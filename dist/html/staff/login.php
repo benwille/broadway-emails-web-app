@@ -25,7 +25,7 @@ if(is_post_request()) {
     if($admin !=false && $admin->verify_password($password)) {
       // Mark admin as logged in
       $session->login($admin);
-      redirect_to(url_for('/staff/index.php'));
+      redirect_to(url_for('/staff/'));
     } else {
       // username not found or password does not match
       $errors[] = "Log in was unsuccessful.";

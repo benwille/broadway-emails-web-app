@@ -11,7 +11,7 @@ $result = $clear->clear('station',$station);
 
 if($result === true) {
   $session->message('Cleared out. Ready for a new email.');
-  redirect_to(url_for('/staff/emails/index.php?station=' . $station));
+  redirect_to(url_for('/staff/emails/?station=' . $station));
 }
 
 // do {

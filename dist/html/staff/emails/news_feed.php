@@ -3,7 +3,7 @@
 
 <?php
 if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/emails/index.php'));
+  redirect_to(url_for('/staff/emails/'));
   }
   $station = $_GET['station'];
   foreach(Email::STATION_URL as $station_id => $station_url) {
@@ -72,7 +72,7 @@ jQuery(document).ready(function() {
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 <?php echo display_errors($item->errors); ?>
 <div class="container">
-<form action="<?php echo 'news_feed.php?station=' . $station; ?>" method="post" id="form">
+<form action="<?php echo '?station=' . $station; ?>" method="post" id="form">
 	<div class="table-responsive">
 		<table class="list table">
 			<tr>
@@ -113,7 +113,19 @@ jQuery(document).ready(function() {
 					case 'Contests':
 						$categoryID = 3;
 						break;
-
+					case 'ESPN 700 Interviews':
+						$categoryID = 4;
+						break;
+          case 'Real Salt Lake':
+						$categoryID = 5;
+						break;
+          case 'Utah Jazz':
+						$categoryID = 6;
+						break;
+          case 'University of Utah':
+						$categoryID = 7;
+						break;
+				
 					default:
 						$categoryID = 0;
 						break;

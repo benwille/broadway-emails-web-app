@@ -3,9 +3,9 @@
   if(!isset($_GET['station'])) {
   redirect_to(url_for('/staff/emails/index.php'));
   }
-  // if ($_GET['station'] == 6) {
-  //   redirect_to(url_for('/staff/emails/sports_email.php?station=6'));
-  // }
+  if ($_GET['station'] == 6) {
+    redirect_to(url_for('/staff/emails/sports_email.php?station=6'));
+  }
   $station = $_GET['station'];
   foreach(Email::STATION as $station_id => $station_name) {
     if($station == $station_id) {
@@ -23,209 +23,666 @@
 <?php require_once('../../../private/content.php'); ?>
 
 <?php $page_title = $stationName . ' Email'; ?>
-<?php include(SHARED_PATH . '/public_header.php'); ?>
+<?php include(SHARED_PATH . '/public_header2.php'); ?>
 
-<div class="row">
-  <div class="col-lg-8 offset-lg-2">
-    <?php
-    if ($featured) {
-      $x = first_position($featured);
-      ?>
+<?php
+if ($featured) {
+?>
+<tr><!-- Featured Section-->
+  <td valign="top" id="templateBody" style="border-width: 1px 1px 2px 1px; border-style: solid; border-color: #EAEAEA;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                            <div style="text-align: left;">FEATURED</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
 
-    <div class="card mb-5" id="featured">
-      <div class="card-header">
-          <span>Featured</span>
-      </div>
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $featured[0]->link ?>" title="<?php echo h_decode($featured[0]->title) ?>" class="" target="_blank">
+                      <img align="center" alt="<?php echo h_decode($featured[0]->title) ?>" src="<?php echo $featured[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
 
-        <div class="card-body">
-          <div class="card mb-2">
-            <img class="card-img" src="<?php echo $featured[0]->imageLink ?>" alt="<?php echo h_decode($featured[0]->title) ?>">
-            <div class="card-img-overlay d-flex hero">
-              <div class="mt-auto text-white">
-                <h2 class="card-title"><a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a></h2>
-                <p class="card-text"><?php echo h_decode($featured[0]->excerpt); ?></p>
-              </div>
-            </div>
-          </div>
-          <div class="card-title-below mt-2">
-            <h2 class="card-title"><a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a></h2>
-            <p class="card-text"><?php echo h_decode($featured[0]->excerpt); ?></p>
-          </div>
-        </div>
-        <div class="list-group list-group-flush">
-          <?php if ($featured) {
-            foreach ($featured as $i => $post) {
-              if ($i == 0) {
-                continue;
-              }
-              if ($i == 1) { ?>
-                <div class="card mx-2 mx-lg-4">
-                  <div class="d-flex media list-group-item" id="featured">
-                    <div class="my-auto"><img class="d-flex img-fluid rounded mr-3"  src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></div>
-                    <div class="media-body">
-                      <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                      <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-                    </div>
-                  </div>
-                </div>
-              <?php } else { ?>
-              <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-            <?php }}
-          } ?>
-        </div>
-    </div>
-  <?php } ?><!--Featured Section-->
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <h2>
+                      <a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a>
+                    </h2>
+                    <p>
+                      <?php echo h_decode($featured[0]->excerpt); ?>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
 
-  <?php
-  if ($sports_posts) {
-    foreach ($sports_posts as $sports_post) {
-      if ($sports_post) {
-  ?>
-  <div class="card mb-5" id="news">
-    <div class="card-header">
-        <div class="d-flex">
-          <div class="flex-grow-1">
-            <span><?php echo $sports_post[0]->category(); ?></span>
-          </div>
-        </div>
-    </div>
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php if ($featured) {
+      foreach ($featured as $i => $post) {
+        if ($i == 0) {
+          continue;
+        }
+        if ($i == 1) { ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+      <tbody class="mcnCaptionBlockOuter">
+        <tr>
+          <td class="mcnCaptionBlockInner" valign="top" style="padding:9px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnCaptionRightContentInner" style="padding:0 9px ;">
+                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="264">
+                      <tbody>
+                        <tr>
+                          <td class="mcnCaptionRightImageContent" align="center" valign="top">
+                            <a href="<?php echo $post->link; ?>">
+                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="264">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent">
+                            <h4 class="null">
+                              <a href="<?php echo $post->link; ?>">
+                                <?php echo h_decode($post->title); ?>
+                              </a>
+                            </h4>
+                            <p>
+                              <?php echo h_decode($post->excerpt); ?>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 9px 18px;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php } else { ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
 
-      <div class="card-body">
-        <div class="card mb-2">
-          <a href="<?php echo $sports_post[0]->link ?>" target="_blank"><img class="card-img img-fluid mb-2 mb-lg-1" src="<?php echo $sports_post[0]->imageLink ?>" alt="<?php echo h_decode($sports_post[0]->title) ?>"></a>
-          <div class="card-img-overlay d-flex hero">
-            <div class="mt-auto text-white">
-              <h2 class="card-title"><a href="<?php echo $sports_post[0]->link ?>" target="_blank"><?php echo h_decode($sports_post[0]->title) ?></a></h2>
-              <p class="card-text"><?php echo h_decode($sports_post[0]->excerpt); ?></p>
-            </div>
-          </div>
-        </div>
-        <div class="card-title-below mt-2">
-          <h2 class="card-title"><a href="<?php echo $sports_post[0]->link ?>" target="_blank"><?php echo h_decode($sports_post[0]->title) ?></a></h2>
-          <p class="card-text"><?php echo h_decode($sports_post[0]->excerpt); ?></p>
-        </div>
-      </div>
-      <div class="list-group list-group-flush">
-        <?php if ($sports_post) {
-          foreach ($sports_post as $i => $post) {
-            if ($i >= 6) {
-              break;
-            }
-            if ($i == 0) {
-              continue;
-            }
-            if ($i == 1) { ?>
-              <div class="card mx-2 mx-lg-4">
-                <div class="d-flex media list-group-item" id="news_featured">
-                  <div class="my-auto"><img class="d-flex img-fluid rounded mr-3" src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></div>
-                  <div class="media-body">
-                    <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                    <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-                  </div>
-                </div>
-              </div>
-            <?php } else { ?>
-            <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-          <?php
-        }}} ?>
-      </div>
-      <div class="card-footer text-center">
-        <a class="card-link text-center" href="<?php echo $category_url;?>" target="_blank"></a>
-      </div>
-    </div>
-  <?php }}} ?><!--Sports Sections-->
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
+                    <a href="<?php echo $post->link; ?>">
+                      <?php echo h_decode($post->title); ?>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
 
-  <?php
-  if ($posts) {
-    // var_dump($sports_posts);
-    foreach ($posts as $post) {
-      if ($post) {
-      $category_url = $stationURL . 'category/' . $post[0]->category();
-  ?>
-  <div class="card mb-5" id="news">
-    <div class="card-header">
-        <div class="d-flex">
-          <div class="flex-grow-1">
-            <span><?php echo $post[0]->category(); ?></span>
-          </div>
-          <div class="my-auto"><a href="<?php echo $category_url;?>" target="_blank">See All &raquo;</a></div>
-        </div>
-    </div>
-
-      <div class="card-body">
-        <div class="card mb-2">
-          <a href="<?php echo $post[0]->link ?>" target="_blank"><img class="card-img img-fluid mb-2 mb-lg-1" src="<?php echo $post[0]->imageLink ?>" alt="<?php echo h_decode($post[0]->title) ?>"></a>
-          <div class="card-img-overlay d-flex hero">
-            <div class="mt-auto text-white">
-              <h2 class="card-title"><a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a></h2>
-              <p class="card-text"><?php echo h_decode($post[0]->excerpt); ?></p>
-            </div>
-          </div>
-        </div>
-        <div class="card-title-below mt-2">
-          <h2 class="card-title"><a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a></h2>
-          <p class="card-text"><?php echo h_decode($post[0]->excerpt); ?></p>
-        </div>
-      </div>
-      <div class="list-group list-group-flush">
-        <?php if ($post) {
-          foreach ($post as $i => $post) {
-            if ($i >= 6) {
-              break;
-            }
-            if ($i == 0) {
-              continue;
-            }
-            if ($i == 1) { ?>
-              <div class="card mx-2 mx-lg-4">
-                <div class="d-flex media list-group-item" id="news_featured">
-                  <div class="my-auto"><img class="d-flex img-fluid rounded mr-3" src="<?php echo $post->imageLink ?>" alt="<?php echo h_decode($post->title) ?>"></div>
-                  <div class="media-body">
-                    <h4><a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a></h4>
-                    <p class="card-text"><?php echo h_decode($post->excerpt); ?></p>
-                  </div>
-                </div>
-              </div>
-            <?php } else { ?>
-            <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-          <?php
-        }}} ?>
-      </div>
-      <div class="card-footer text-center">
-        <a class="card-link text-center" href="<?php echo $category_url;?>" target="_blank">See All</a>
-      </div>
-    </div>
-  <?php }}} ?><!--Posts Sections-->
-
-  <?php if ($latest) { ?>
-  <div class="card mb-5" id="latest">
-    <div class="card-header">
-      <div class="d-flex">
-        <div class="flex-grow-1">
-          <span>Latest</span>
-        </div>
-        <div class="my-auto"><a href="<?php echo $stationURL . 'blog';?>" target="_blank">See All &raquo;</a></div>
-      </div>
-    </div>
-
-      <div class="list-group list-group-flush">
-        <?php if ($latest) {
-          foreach ($latest as $i => $post) {
-            if ($i >= 6) {
-              break;
-            } ?>
-            <a class="list-group-item" href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
-        <?php  }} ?>
-      </div>
-      <div class="card-footer text-center">
-        <a class="card-link text-center" href="<?php echo $stationURL . 'blog';?>" target="_blank">See All</a>
-      </div>
-  </div> <!--Latest News Section-->
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php }}} ?>
+  </td>
+</tr><!-- Featured Section-->
 <?php } ?>
-</div> <!-- Main Section - Left Side -->
 
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
 
-</div>
+<?php
+if ($posts) {
+  // var_dump($sports_posts);
+  foreach ($posts as $post) {
+    if ($post) {
+    $category_url = $stationURL . 'category/' . $post[0]->category();
+?>
+<tr><!--Sections-->
+  <td valign="top" class="templateBody" style="border-width: 1px 1px 1px 1px; border-style: solid; border-color: #EAEAEA;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                            <div style="text-align: left; text-transform: uppercase;">
+                              <strong><?php echo $post[0]->category(); ?></strong>
+                            </div>
+                          </td>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
+                            <a href="<?php echo $category_url;?>">
+                              <span>See All »</span>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
 
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $post[0]->link ?>" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
+                      <img align="center" alt="<?php echo h_decode($post[0]->title) ?>" src="<?php echo $post[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                    <h2>
+                      <a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
+                    </h2>
+                    <p>
+                      <?php echo h_decode($post[0]->excerpt); ?>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php if ($post) {
+      foreach ($post as $i => $post) {
+        if ($i >= 6) {
+          break;
+        }
+        if ($i == 0) {
+          continue;
+        }
+        if ($i == 1) { ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+      <tbody class="mcnCaptionBlockOuter">
+        <tr>
+          <td class="mcnCaptionBlockInner" valign="top" style="padding:9px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnCaptionRightContentInner" style="padding:0 9px ;">
+                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="264">
+                      <tbody>
+                        <tr>
+                          <td class="mcnCaptionRightImageContent" align="center" valign="top">
+                            <a href="<?php echo $post->link; ?>">
+                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="264">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent">
+                            <h4 class="null">
+                              <a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
+                            </h4>
+                            <p>
+                              <?php echo h_decode($post->excerpt); ?>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 9px 18px;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php } else { ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
+                    <a href="<?php echo $post->link; ?>">
+                      <?php echo h_decode($post->title); ?>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <?php }}} ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+    				<!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border-width: 1px 0; border-style: solid; border-color: #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Sections-->
+
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
+<?php }}} ?>
+
+<?php if ($latest) { ?>
+<tr><!--Latest-->
+  <td valign="top" class="templateBody" style="border: 1px solid #EAEAEA;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+  	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+  	<![endif]-->
+    	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+            <!--[if gte mso 9]>
+    				<td align="center" valign="top" ">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                            <div style="text-align: left; text-transform: uppercase;">
+                              <strong>LATEST</strong>
+                            </div>
+                          </td>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
+                            <a href="<?php echo $category_url;?>">
+                              <span>See All »</span>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if gte mso 9]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if gte mso 9]>
+            </tr>
+            </table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php if ($latest) {
+      foreach ($latest as $i => $post) {
+        if ($i >= 6) {
+          break;
+    } ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+      <tbody class="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+          	<!--[if mso]>
+    				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+    				<tr>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				<td valign="top" width="600" style="width:600px;">
+    				<![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+              <tbody>
+                <tr>
+                  <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
+                    <a href="<?php echo $post->link; ?>">
+                      <?php echo h_decode($post->title); ?>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    				<!--[if mso]>
+    				</td>
+    				<![endif]-->
+
+    				<!--[if mso]>
+    				</tr>
+    				</table>
+    				<![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?php }} ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+    <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <![endif]-->
+      <tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+          <td valign="top" class="mcnBoxedTextBlockInner">
+            <!--[if gte mso 9]>
+            <td align="center" valign="top" ">
+            <![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border-width: 1px 0; border-style: solid; border-color: #EAEAEA;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--[if gte mso 9]>
+            </td>
+            <![endif]-->
+
+            <!--[if gte mso 9]>
+            </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Latest-->
+<?php } ?>
 
 <?php include(SHARED_PATH . '/public_footer.php'); ?>
