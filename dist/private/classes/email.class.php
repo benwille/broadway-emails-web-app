@@ -258,7 +258,7 @@ class Email extends DatabaseObject {
             </tr>
             <?php foreach($results as $post) { ?>
               <tr>
-                <form action="<?php echo 'index.php?id=' . h(u($post->id)) . '&station=' . $station ; ?>" method="post" id="postform">
+                <form action="<?php echo '?id=' . h(u($post->id)) . '&station=' . $station ; ?>" method="post" id="postform">
                 <td><?php echo h($post->title); ?></td>
                 <td class="align-middle">
                   <select name="post[category]">
@@ -321,7 +321,7 @@ class Email extends DatabaseObject {
             </tr>
             <?php foreach($contests as $post) { ?>
               <tr>
-                <form action="<?php echo 'index.php?id=' . h(u($post->id)) ; ?>" method="post" id="postform">
+                <form action="<?php echo '?id=' . h(u($post->id)) ; ?>" method="post" id="postform">
                 <td><?php echo h($post->title); ?></td>
                 <td class="align-middle">
                   <select name="post[category]">
