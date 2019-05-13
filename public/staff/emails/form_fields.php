@@ -5,14 +5,15 @@ if(!isset($post)) {
   redirect_to(url_for('/staff/emails/index.php?station=' . h($station)));
 }
 $post->station = $station;
+date_default_timezone_set("America/Denver");
+$pubDate = $post->pubDate ?? date("Y-m-d H:i:s");
 ?>
 
 <dl>
   <dt>Station</dt>
   <dd><?php echo h($post->station()); ?></dd>
   <dd><input type="hidden" name="post[station]" value="<?php echo $post->station; ?>" /></dd>
-  <dd><input type="hidden" name="post[pubDate]" value="<?php date_default_timezone_set("America/Denver");
-  echo date("Y-m-d H:i:s");?>"></dd>
+  <dd><input type="hidden" name="post[pubDate]" value="<?php echo $pubDate; ?>"></dd>
 </dl>
 
 <dl>

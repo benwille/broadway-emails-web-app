@@ -64,6 +64,9 @@
     <?php echo display_errors($post->errors); ?>
 
     <div class="d-flex">
+      <div class="ml-1">
+        <a class="btn btn-primary" href="<?php echo url_for("staff/emails/new.php?station=") . $station; ?>">New Post</a>
+      </div>
       <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
@@ -117,7 +120,11 @@
             <td class="align-middle">
               <select name="post[category]">
                 <option value=""></option>
-              <?php foreach(Email::CATEGORY as $category_id => $category_name) { ?>
+                <?php foreach(Email::CATEGORY as $category_id => $category_name) { if ($station !=6) {
+                  if ($category_id > 3) {
+                    break;
+                  }
+                }?>
                 <option value="<?php echo $category_id; ?>" <?php if($post->category == $category_id) { echo 'selected'; } ?>><?php echo $category_name; ?></option>
               <?php } ?>
               </select>
@@ -130,8 +137,8 @@
             </td>
             <td class="align-middle"><a class="action" href="<?php echo $post->link; ?>" target="_blank">View</a></td>
             <?php if ($admin->is_admin()) { ?>
-            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/edit.php?id=' . h(u($post->id))); ?>">Edit</a></td>
-            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/delete.php?id=' . h(u($post->id))); ?>">Delete</a></td>
+            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/edit.php?id=' . h(u($post->id)) . '&station=' . h(u($post->station))); ?>">Edit</a></td>
+            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/delete.php?id=' . h(u($post->id)) . '&station=' . h(u($post->station))); ?>">Delete</a></td>
             <td class="align-middle"><input type="submit" value="Update" /></td>
             <?php } ?>
             </form>
@@ -160,17 +167,22 @@
       <?php
       $utes = new Email;
       $utes->get_posts($station,7); ?>
+
+      <h2>Salt Lake Stallions</h2>
+      <?php
+      $stallions = new Email;
+      $stallions->get_posts($station,8); ?>
     <?php } ?>
+
+    <h2>Contest Posts</h2>
+    <?php
+    $contests = new Email;
+    $contests->get_posts($station,3); ?>
 
     <h2>News Posts</h2>
     <?php
     $news = new Email;
     $news->get_posts($station,1); ?>
-
-    <h2>Contest Posts</h2>
-  	<?php
-    $contests = new Email;
-    $contests->get_posts($station,3); ?>
 
     <h2>Life Posts</h2>
     <?php

@@ -10,6 +10,7 @@ CREATE TABLE `posts` (
   `position` tinyint(1) DEFAULT 0,
   `category` tinyint(1) DEFAULT NULL,
   `excerpt` text DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT 1,
   PRIMARY KEY (`id`)
 );
 

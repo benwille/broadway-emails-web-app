@@ -20,6 +20,7 @@ if ($station == 6) {
   $utes = Email::post_query($station, 7, 0),
   $rsl = Email::post_query($station, 5, 0),
   $jazz = Email::post_query($station, 6, 0),
+  $stallions = Email::post_query($station, 8, 0),
   $interviews = Email::post_query($station, 4, 0)
   );
 }

@@ -4,15 +4,9 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-station	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^  $station = $_GET['station'];$/;"	variable	line:7
-station_id	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^  foreach(Email::STATION as $station_id => $station_name) {$/;"	variable	line:8
-stationName	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^    $stationName = $station_name;$/;"	variable	line:10
-station_id	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^  foreach(Email::STATION_URL as $station_id => $station_url) {$/;"	variable	line:14
-stationURL	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^    $stationURL = "https:\/\/www." . $station_url . ".com\/";$/;"	variable	line:16
-page_title	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^<?php $page_title = $stationName . ' Email'; ?>$/;"	variable	line:23
-i	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^      foreach ($featured as $i => $post) {$/;"	variable	line:128
-category_url	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^    $category_url = $stationURL . 'category\/' . $post[0]->category();$/;"	variable	line:269
-i	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^      foreach ($post as $i => $post) {$/;"	variable	line:377
-category_url	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^    $category_url = $stationURL . 'category\/' . $post[0]->category();$/;"	variable	line:558
-i	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^      foreach ($post as $i => $post) {$/;"	variable	line:666
-i	/Users/bwille/Sites/Broadway/emails/public/index_espn.php	/^      foreach ($latest as $i => $post) {$/;"	variable	line:892
+args	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $args = $_POST['admin'];$/;"	variable	line:10
+admin	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $admin = new Admin($args);$/;"	variable	line:11
+result	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $result = $admin->save();$/;"	variable	line:12
+new_id	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^    $new_id = $admin->id;$/;"	variable	line:17
+admin	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^  $admin = new Admin;$/;"	variable	line:26
+page_title	/Users/bwille/Sites/Broadway/emails/dist/html/staff/admins/new.php	/^<?php $page_title = 'Create Admin'; ?>$/;"	variable	line:31

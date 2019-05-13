@@ -124,6 +124,8 @@ class Admin extends DatabaseObject {
   public function is_admin() {
     if ($this->is_admin == 1) {
       return true;
+    } else {
+      return false;
     }
   }
 

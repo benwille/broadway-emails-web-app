@@ -35,8 +35,8 @@
       <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=1'); ?>">X96</a>
       <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=2'); ?>">Mix</a>
       <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=3'); ?>">U92</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=4'); ?>">Eagle</a>
-      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=5'); ?>">Rewind</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=4'); ?>">Rewind</a>
+      <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=5'); ?>">Eagle</a>
       <a class="nav-link btn btn-primary" href="<?php echo url_for('/staff/emails/index.php?station=6'); ?>">ESPN</a>
     </nav>
     <!-- <ul>

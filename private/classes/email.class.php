@@ -4,7 +4,7 @@ class Email extends DatabaseObject {
 
   // ----- START OF ACTIVE RECORD CODE ------
   static protected $table_name = "posts";
-  static protected $db_columns = ['id', 'station', 'title', 'link', 'pubDate', 'imageLink', 'featured', 'position', 'category', 'excerpt'];
+  static protected $db_columns = ['id', 'station', 'title', 'link', 'pubDate', 'imageLink', 'featured', 'position', 'category', 'excerpt', 'visible'];
 
   public $id;
   public $station;
@@ -17,6 +17,7 @@ class Email extends DatabaseObject {
   public $position = 0;
   public $category;
   public $excerpt;
+  public $visible;
 
   public const STATION = [
     1 => 'X96',
@@ -44,7 +45,8 @@ class Email extends DatabaseObject {
     4 => 'Interviews',
     5 => 'RSL',
     6 => 'Utah Jazz',
-    7 => 'University of Utah'
+    7 => 'University of Utah',
+    8 => 'Salt Lake Stallions'
   ];
 
   public function __construct($args=[]) {
@@ -52,31 +54,16 @@ class Email extends DatabaseObject {
     $this->station = $args['station'] ?? '';
     $this->title = $args['title'] ?? '';
     $this->link = $args['link'] ?? '';
-    $this->pubDate = $args['pubDate'] ?? '';
+    $this->pubDate = $args['pubDate'] ?? NULL;
     $this->imageLink = $args['imageLink'] ?? '';
     $this->featured = $args['featured'] ?? 0;
     $this->position = $args['position'] ?? 0;
     $this->category = $args['category'] ?? '';
     $this->excerpt = $args['excerpt'] ?? '';
+    $this->visible = $args['visible'] ?? '';
 
 
   }
-
-  // public function banner() {
-  //   if($this->promoted_banner > 0) {
-  //     return self::BANNER[$this->promoted_banner];
-  //   } else {
-  //     return "Unknown";
-  //   }
-  // }
-  //
-  // public function banner_color() {
-  //   if ($this->promoted_banner == 2) {
-  //     echo 'bg-danger';
-  //   } elseif ($this->promoted_banner == 3) {
-  //     echo 'bg-success';
-  //   }
-  // }
 
   public function station() {
     if($this->station > 0) {
@@ -139,108 +126,19 @@ class Email extends DatabaseObject {
       return true;
     }
   }
-  //
-  // public function hero() {
-  //   if ($this->hero == 1) {
-  //     return true;
-  //   }
-  // }
-  //
-  // public function team_hero() {
-  //   if ($this->team_hero == 1) {
-  //     return true;
-  //   }
-  // }
-  //
-  // public function team_featured() {
-  //   if ($this->team_featured == 1) {
-  //     return true;
-  //   }
-  // }
-  //
-  // public function live() {
-  //   if ($this->live == 1) {
-  //     return true;
-  //   }
-  // }
-  //
+
+  public function visible() {
+    if ($this->visible == 1) {
+      return true;
+    }
+  }
+
   public function pubDate() {
     $date = date_create( $this->pubDate);
     $dateformat = date_format($date, 'D d M Y h:i A');
     return $dateformat;
   }
-  //
-  // public static function count_promoted() {
-  //   $sql = "SELECT COUNT(*) FROM " . static::$table_name . " ";
-  //   $sql .= "WHERE promoted=1";
-  //   $result_set = self::$database->query($sql);
-  //   if (!$result_set) {
-  //     return 0;
-  //   } else {
-  //     $row = $result_set->fetch_array();
-  //     return array_shift($row);
-  //   }
-  // }
-  //
-  // public static function count_hero() {
-  //   $sql = "SELECT COUNT(*) FROM " . static::$table_name . " ";
-  //   $sql .= "WHERE hero=1";
-  //   $result_set = self::$database->query($sql);
-  //   if (!$result_set) {
-  //     return 0;
-  //   } else {
-  //     $row = $result_set->fetch_array();
-  //     return array_shift($row);
-  //   }
-  // }
-  //
-  // public static function count_team($team) {
-  //   $sql = "SELECT COUNT(*) FROM " . static::$table_name . " ";
-  //   $sql .= "WHERE team=" . self::$database->escape_string($team) . " ";
-  //   $result_set = self::$database->query($sql);
-  //   if (!$result_set) {
-  //     return 0;
-  //   } else {
-  //     $row = $result_set->fetch_array();
-  //     return array_shift($row);
-  //   }
-  // }
-  //
-  // public static function count_team_hero($team) {
-  //   $sql = "SELECT COUNT(*) FROM " . static::$table_name . " ";
-  //   $sql .= "WHERE team=" . static::$database->escape_string($team) . " ";
-  //   $sql .= "AND team_hero=1";
-  //   $result_set = self::$database->query($sql);
-  //   if (!$result_set) {
-  //     return 0;
-  //   } else {
-  //     $row = $result_set->fetch_array();
-  //     return array_shift($row);
-  //   }
-  // }
-  //
-  // public static function count_team_featured($team) {
-  //   $sql = "SELECT COUNT(*) FROM " . static::$table_name . " ";
-  //   $sql .= "WHERE team=" . static::$database->escape_string($team) . " ";
-  //   $sql .= "AND team_featured=1";
-  //   $result_set = self::$database->query($sql);
-  //   if (!$result_set) {
-  //     return 0;
-  //   } else {
-  //     $row = $result_set->fetch_array();
-  //     return array_shift($row);
-  //   }
-  // }
-  //
-  // public static function delete_old_posts($delete_id, $delete_num) {
-  //   $sql = "DELETE FROM news_feed ";
-  //   $sql .= "WHERE id < " . h($delete_id) . " ";
-  //   $sql .= "LIMIT " . h($delete_num);
-  //   $result = static::$database->query($sql);
-  //
-  //   return $result;
-  // }
-  //
+
   protected function validate() {
     $this->errors = [];
 
@@ -296,6 +194,7 @@ class Email extends DatabaseObject {
     $sql .= "WHERE station=" . $station . " ";
     $sql .= "AND category=" . $category . " ";
     $sql .= "AND featured=" . $featured . " ";
+    $sql .= "AND visible=1 ";
     $sql .= "ORDER BY position = 0, position, pubDate DESC ";
     $sql .= "LIMIT 5 ";
     $results = Email::find_by_sql($sql);
@@ -307,12 +206,30 @@ class Email extends DatabaseObject {
     global $pagination;
     global $per_page;
 
-    $sql = "SELECT * FROM posts ";
+    // $sql = "SELECT * FROM posts ";
+    // $sql .= "WHERE station=" . $station . " ";
+    // $sql .= "AND category=" . $category . " ";
+    // // $sql .= "AND visible=1 ";
+    // $sql .= "AND NOT featured=1 ";
+    // $sql .= "ORDER BY pubDate DESC ";
+    // $sql .= "LIMIT {$per_page} ";
+    // $results = Email::find_by_sql($sql);
+    $sql = "(SELECT * FROM posts ";
     $sql .= "WHERE station=" . $station . " ";
     $sql .= "AND category=" . $category . " ";
+    $sql .= "AND visible=1 ";
     $sql .= "AND NOT featured=1 ";
     $sql .= "ORDER BY pubDate DESC ";
-    $sql .= "LIMIT {$per_page} ";
+    $sql .= "LIMIT 10) ";
+    $sql .= "UNION (SELECT * FROM posts ";
+    $sql .= "WHERE station=" . $station . " ";
+    $sql .= "AND category=" . $category . " ";
+    $sql .= "AND visible=0 ";
+    $sql .= "AND NOT featured=1 ";
+    $sql .= "ORDER BY pubDate DESC ";
+    $sql .= "LIMIT 5) ";
+    $sql .= "ORDER BY pubDate DESC ";
+    // $sql .= "LIMIT {$per_page} ";
     $results = Email::find_by_sql($sql);
 
     // if (!$results) {
@@ -331,6 +248,7 @@ class Email extends DatabaseObject {
           <th>Publish Date</th>
           <th>Position</th>
           <th>Featured</th>
+          <th>Visible</th>
           <th>&nbsp;</th>
           <?php if ($admin->is_admin()) { ?>
           <th>&nbsp;</th>
@@ -345,7 +263,11 @@ class Email extends DatabaseObject {
             <td class="align-middle">
               <select name="post[category]">
                 <option value=""></option>
-              <?php foreach(Email::CATEGORY as $category_id => $category_name) { ?>
+                <?php foreach(Email::CATEGORY as $category_id => $category_name) { if ($station !=6) {
+                  if ($category_id > 3) {
+                    break;
+                  }
+                }?>
                 <option value="<?php echo $category_id; ?>" <?php if($post->category == $category_id) { echo 'selected'; } ?>><?php echo $category_name; ?></option>
               <?php } ?>
               </select>
@@ -355,6 +277,10 @@ class Email extends DatabaseObject {
             <td class="text-center align-middle">
               <input type="hidden" name="post[featured]" value="0" />
               <input type="checkbox" name="post[featured]" value="1"<?php if($post->featured()) { echo " checked"; } ?> />
+            </td>
+            <td class="text-center align-middle">
+              <input type="hidden" name="post[visible]" value="0" />
+              <input type="checkbox" name="post[visible]" value="1"<?php if($post->visible()) { echo " checked"; } ?> />
             </td>
             <td class="align-middle"><a class="action" href="<?php echo $post->link; ?>" target="_blank">View</a></td>
             <?php if ($admin->is_admin()) { ?>
