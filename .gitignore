@@ -1,1 +1,5 @@
 emailfeed.log
+node_modules/*
+vendor/*
+*.tags
+*.tag1

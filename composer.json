@@ -1,0 +1,21 @@
+{
+  "name": "rsl_player_registry",
+  "description": "All time player registry for Real Salt Lake",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0",
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^1.0.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+    "wimg/php-compatibility": "^8.1",
+    "squizlabs/php_codesniffer": "^3.4"
+  },
+  "scripts": {
+    "install-codestandards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
+    "phpcs-dev": "\"vendor/bin/phpcs\"",
+    "run-phpcs": [
+      "@phpcs-dev"
+    ]
+  }
+}
