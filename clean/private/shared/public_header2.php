@@ -17,10 +17,10 @@
 		echo '- ' . h( $page_title ); } ?></title>
 	 <style type="text/css">
 		<?php
-		require PUBLIC_PATH . '/stylesheets/mailchimp.bootstrap.css';
-		require PUBLIC_PATH . '/stylesheets/mailchimp.css';
+		require PUBLIC_PATH . '/stylesheets/mailchimp.bootstrap.min.css';
+		require PUBLIC_PATH . '/stylesheets/mailchimp.min.css';
 		// include PUBLIC_PATH . '/stylesheets/public.min.css';
-		require PUBLIC_PATH . '/stylesheets/' . strtolower( $stationName ) . '.css';
+		require PUBLIC_PATH . '/stylesheets/' . strtolower( $stationName ) . '.min.css';
 		?>
 
 	</style>

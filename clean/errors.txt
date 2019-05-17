@@ -28,7 +28,7 @@
 [1mPHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 259ms; Memory: 8MB
+Time: 251ms; Memory: 8MB
 
 
 
@@ -89,7 +89,7 @@ Time: 259ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 16 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 191ms; Memory: 8MB
+Time: 202ms; Memory: 8MB
 
 
 
@@ -1710,7 +1710,7 @@ Time: 191ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 805 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 346ms; Memory: 10MB
+Time: 254ms; Memory: 10MB
 
 
 
@@ -1805,7 +1805,7 @@ Time: 346ms; Memory: 10MB
 [1mPHPCBF CAN FIX THE 48 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 224ms; Memory: 8MB
+Time: 201ms; Memory: 8MB
 
 
 
@@ -1880,7 +1880,7 @@ Time: 224ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 39 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 239ms; Memory: 8MB
+Time: 195ms; Memory: 8MB
 
 
 
@@ -1964,7 +1964,7 @@ Time: 239ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 39 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 239ms; Memory: 8MB
+Time: 187ms; Memory: 8MB
 
 
 
@@ -2015,7 +2015,7 @@ Time: 239ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 20 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 207ms; Memory: 8MB
+Time: 177ms; Memory: 8MB
 
 
 
@@ -2316,7 +2316,7 @@ Time: 207ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 160 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 237ms; Memory: 8MB
+Time: 208ms; Memory: 8MB
 
 
 
@@ -2424,7 +2424,7 @@ Time: 237ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 56 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 207ms; Memory: 8MB
+Time: 192ms; Memory: 8MB
 
 
 
@@ -2596,7 +2596,7 @@ Time: 207ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 103 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 194ms; Memory: 8MB
+Time: 191ms; Memory: 8MB
 
 
 
@@ -3263,350 +3263,7 @@ Time: 194ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 342 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 340ms; Memory: 10MB
-
-
-
-
-[1mFILE: /Users/bwille/Sites/Broadway/emails/dev/html/staff/index.php[0m
-----------------------------------------------------------------------
-[1mFOUND 68 ERRORS AFFECTING 40 LINES[0m
-----------------------------------------------------------------------
-  1 | [31mERROR[0m | [ ] Missing file doc comment
-  1 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
-  1 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
-  6 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
-  6 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 10 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 11 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 12 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 13 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 14 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 15 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 16 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 17 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 18 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 19 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 20 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 21 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 22 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 23 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 24 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 25 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 26 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 27 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 28 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 29 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 30 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 31 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 32 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 33 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 34 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 35 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 35 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'url_for'.
- 35 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 35 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 36 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 36 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'url_for'.
- 36 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 36 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 37 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 37 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'url_for'.
- 37 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 37 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 38 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 38 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'url_for'.
- 38 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 38 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 39 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 39 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'url_for'.
- 39 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 39 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 40 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 40 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'url_for'.
- 40 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 40 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 41 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 42 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 43 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 43 | [31mERROR[0m | [x] No space found before comment text; expected "//
-    |       |     echo url_for('/staff/tasks/index.php');" but found
-    |       |     "//echo url_for('/staff/tasks/index.php');"
- 43 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 44 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 44 | [31mERROR[0m | [x] No space found before comment text; expected "//
-    |       |     echo url_for('/staff/archives/index.php');" but
-    |       |     found "//echo
-    |       |     url_for('/staff/archives/index.php');"
- 44 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 45 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 45 | [31mERROR[0m | [x] No space found before comment text; expected "//
-    |       |     echo url_for('/staff/admins/index.php');" but found
-    |       |     "//echo url_for('/staff/admins/index.php');"
- 45 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 46 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 51 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 51 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
-----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 58 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
-----------------------------------------------------------------------
-
-Time: 201ms; Memory: 8MB
-
-
-
-
-[1mFILE: /Users/bwille/Sites/Broadway/emails/dev/html/staff/login.php[0m
-----------------------------------------------------------------------
-[1mFOUND 114 ERRORS AFFECTING 34 LINES[0m
-----------------------------------------------------------------------
-  1 | [31mERROR[0m | [ ] Missing file doc comment
-  2 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
-  2 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
-  4 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
-    |       |     assignment to $errors
-  8 | [31mERROR[0m | [x] Space after opening control structure is required
-  8 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
-  8 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
-  8 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
-  8 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
- 10 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
-    |       |     tabs, found 0
- 10 | [31mERROR[0m | [ ] Detected usage of a non-validated input variable:
-    |       |     $_POST
- 10 | [31mERROR[0m | [ ] Processing form data without nonce verification.
- 11 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
-    |       |     tabs, found 0
- 11 | [31mERROR[0m | [ ] Detected usage of a non-validated input variable:
-    |       |     $_POST
- 11 | [31mERROR[0m | [ ] Processing form data without nonce verification.
- 13 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
-    |       |     tabs, found 0
- 13 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 14 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
- 14 | [31mERROR[0m | [x] Space after opening control structure is required
- 14 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
- 14 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
- 14 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
- 14 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 14 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 14 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
- 15 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 15 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
-    |       |     tabs, found 1
- 15 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
-    |       |     assignment to $errors
- 15 | [31mERROR[0m | [x] String "Username cannot be blank." does not require
-    |       |     double quotes; use single quotes instead
- 16 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
- 17 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
- 17 | [31mERROR[0m | [x] Space after opening control structure is required
- 17 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
- 17 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
- 17 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
- 17 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 17 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 17 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
- 18 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 18 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
-    |       |     tabs, found 1
- 18 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
-    |       |     assignment to $errors
- 18 | [31mERROR[0m | [x] String "Password cannot be blank." does not require
-    |       |     double quotes; use single quotes instead
- 19 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
- 21 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
-    |       |     tabs, found 0
- 21 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 22 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
- 22 | [31mERROR[0m | [x] Space after opening control structure is required
- 22 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
- 22 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
- 22 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
- 22 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 22 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 22 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
- 23 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 23 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
-    |       |     tabs, found 1
- 23 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 23 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 24 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 24 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
-    |       |     tabs, found 1
- 24 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 25 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 25 | [31mERROR[0m | [x] Line indented incorrectly; expected 2 tabs, found 1
- 25 | [31mERROR[0m | [x] Space after opening control structure is required
- 25 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
- 25 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
- 25 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
- 25 | [31mERROR[0m | [ ] Use Yoda Condition checks, you must.
- 25 | [31mERROR[0m | [x] Expected 1 space after "!="; 0 found
- 25 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 25 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 25 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
- 26 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 26 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
-    |       |     tabs, found 1
- 26 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 27 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 27 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
-    |       |     tabs, found 1
- 27 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 27 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 28 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 28 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
-    |       |     tabs, found 1
- 28 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 28 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 28 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 28 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 29 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 29 | [31mERROR[0m | [x] Line indented incorrectly; expected 2 tabs, found 1
- 30 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 30 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
-    |       |     tabs, found 1
- 30 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-    |       |     marks, or question marks
- 31 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 31 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
-    |       |     tabs, found 1
- 31 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
-    |       |     assignment to $errors
- 31 | [31mERROR[0m | [x] String "Log in was unsuccessful." does not require
-    |       |     double quotes; use single quotes instead
- 32 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 32 | [31mERROR[0m | [x] Line indented incorrectly; expected 2 tabs, found 1
- 32 | [31mERROR[0m | [x] Blank line found after control structure
- 34 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
- 34 | [31mERROR[0m | [x] Blank line found after control structure
- 41 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 41 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 46 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
-    |       |     tabs, found 0
- 46 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found
-    |       |     'display_errors'.
- 46 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 46 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 49 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 50 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 50 | [31mERROR[0m | [ ] All output should be run through an escaping
-    |       |     function (see the Security sections in the
-    |       |     WordPress Developer Handbooks), found 'h'.
- 50 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 50 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 51 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 52 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 53 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
-    |       |     allowed
- 58 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 58 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
-----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 97 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
-----------------------------------------------------------------------
-
-Time: 195ms; Memory: 8MB
-
-
-
-
-[1mFILE: /Users/bwille/Sites/Broadway/emails/dev/html/staff/logout.php[0m
-----------------------------------------------------------------------
-[1mFOUND 11 ERRORS AFFECTING 6 LINES[0m
-----------------------------------------------------------------------
- 1 | [31mERROR[0m | [ ] Missing file doc comment
- 2 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 2 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 4 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
-   |       |     marks, or question marks
- 5 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 5 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 7 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 7 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 7 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
- 7 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
- 9 | [31mERROR[0m | [x] A closing tag is not permitted at the end of a PHP
-   |       |     file
-----------------------------------------------------------------------
-[1mPHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
-----------------------------------------------------------------------
-
-Time: 187ms; Memory: 8MB
+Time: 228ms; Memory: 10MB
 
 
 
@@ -4208,7 +3865,7 @@ Time: 187ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 331 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 233ms; Memory: 10MB
+Time: 212ms; Memory: 10MB
 
 
 
@@ -5200,7 +4857,7 @@ Time: 233ms; Memory: 10MB
 [1mPHPCBF CAN FIX THE 553 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 258ms; Memory: 10MB
+Time: 253ms; Memory: 10MB
 
 
 
@@ -6549,7 +6206,7 @@ Time: 258ms; Memory: 10MB
 [1mPHPCBF CAN FIX THE 712 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 265ms; Memory: 12MB
+Time: 272ms; Memory: 12MB
 
 
 
@@ -6852,7 +6509,7 @@ Time: 265ms; Memory: 12MB
 [1mPHPCBF CAN FIX THE 172 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 240ms; Memory: 8MB
+Time: 209ms; Memory: 8MB
 
 
 
@@ -7129,7 +6786,7 @@ Time: 240ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 172 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 205ms; Memory: 8MB
+Time: 204ms; Memory: 8MB
 
 
 
@@ -7411,7 +7068,7 @@ Time: 205ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 161 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 203ms; Memory: 8MB
+Time: 207ms; Memory: 8MB
 
 
 
@@ -7665,7 +7322,350 @@ Time: 203ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 151 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 218ms; Memory: 8MB
+Time: 212ms; Memory: 8MB
+
+
+
+
+[1mFILE: /Users/bwille/Sites/Broadway/emails/dev/html/staff/index.php[0m
+----------------------------------------------------------------------
+[1mFOUND 68 ERRORS AFFECTING 40 LINES[0m
+----------------------------------------------------------------------
+  1 | [31mERROR[0m | [ ] Missing file doc comment
+  1 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+  1 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+  6 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+  6 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 10 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 11 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 12 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 13 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 14 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 15 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 16 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 17 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 18 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 19 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 20 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 21 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 22 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 23 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 24 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 25 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 26 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 27 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 28 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 29 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 30 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 31 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 32 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 33 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 34 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 35 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 35 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'url_for'.
+ 35 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 35 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 36 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 36 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'url_for'.
+ 36 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 36 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 37 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 37 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'url_for'.
+ 37 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 37 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 38 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 38 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'url_for'.
+ 38 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 38 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 39 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 39 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'url_for'.
+ 39 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 39 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 40 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 40 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'url_for'.
+ 40 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 40 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 41 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 42 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 43 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 43 | [31mERROR[0m | [x] No space found before comment text; expected "//
+    |       |     echo url_for('/staff/tasks/index.php');" but found
+    |       |     "//echo url_for('/staff/tasks/index.php');"
+ 43 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 44 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 44 | [31mERROR[0m | [x] No space found before comment text; expected "//
+    |       |     echo url_for('/staff/archives/index.php');" but
+    |       |     found "//echo
+    |       |     url_for('/staff/archives/index.php');"
+ 44 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 45 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 45 | [31mERROR[0m | [x] No space found before comment text; expected "//
+    |       |     echo url_for('/staff/admins/index.php');" but found
+    |       |     "//echo url_for('/staff/admins/index.php');"
+ 45 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 46 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 51 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 51 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 58 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 192ms; Memory: 8MB
+
+
+
+
+[1mFILE: /Users/bwille/Sites/Broadway/emails/dev/html/staff/login.php[0m
+----------------------------------------------------------------------
+[1mFOUND 114 ERRORS AFFECTING 34 LINES[0m
+----------------------------------------------------------------------
+  1 | [31mERROR[0m | [ ] Missing file doc comment
+  2 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+  2 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+  4 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
+    |       |     assignment to $errors
+  8 | [31mERROR[0m | [x] Space after opening control structure is required
+  8 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
+  8 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
+  8 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
+  8 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
+ 10 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
+    |       |     tabs, found 0
+ 10 | [31mERROR[0m | [ ] Detected usage of a non-validated input variable:
+    |       |     $_POST
+ 10 | [31mERROR[0m | [ ] Processing form data without nonce verification.
+ 11 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
+    |       |     tabs, found 0
+ 11 | [31mERROR[0m | [ ] Detected usage of a non-validated input variable:
+    |       |     $_POST
+ 11 | [31mERROR[0m | [ ] Processing form data without nonce verification.
+ 13 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
+    |       |     tabs, found 0
+ 13 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 14 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
+ 14 | [31mERROR[0m | [x] Space after opening control structure is required
+ 14 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
+ 14 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
+ 14 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
+ 14 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 14 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 14 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
+ 15 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 15 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
+    |       |     tabs, found 1
+ 15 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
+    |       |     assignment to $errors
+ 15 | [31mERROR[0m | [x] String "Username cannot be blank." does not require
+    |       |     double quotes; use single quotes instead
+ 16 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
+ 17 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
+ 17 | [31mERROR[0m | [x] Space after opening control structure is required
+ 17 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
+ 17 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
+ 17 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
+ 17 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 17 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 17 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
+ 18 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 18 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
+    |       |     tabs, found 1
+ 18 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
+    |       |     assignment to $errors
+ 18 | [31mERROR[0m | [x] String "Password cannot be blank." does not require
+    |       |     double quotes; use single quotes instead
+ 19 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
+ 21 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
+    |       |     tabs, found 0
+ 21 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 22 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
+ 22 | [31mERROR[0m | [x] Space after opening control structure is required
+ 22 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
+ 22 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
+ 22 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
+ 22 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 22 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 22 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
+ 23 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 23 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
+    |       |     tabs, found 1
+ 23 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 23 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 24 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 24 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 2
+    |       |     tabs, found 1
+ 24 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 25 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 25 | [31mERROR[0m | [x] Line indented incorrectly; expected 2 tabs, found 1
+ 25 | [31mERROR[0m | [x] Space after opening control structure is required
+ 25 | [31mERROR[0m | [x] No space before opening parenthesis is prohibited
+ 25 | [31mERROR[0m | [x] No space after opening parenthesis is prohibited
+ 25 | [31mERROR[0m | [x] Expected 1 space(s) after IF keyword; 0 found
+ 25 | [31mERROR[0m | [ ] Use Yoda Condition checks, you must.
+ 25 | [31mERROR[0m | [x] Expected 1 space after "!="; 0 found
+ 25 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 25 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 25 | [31mERROR[0m | [x] No space before closing parenthesis is prohibited
+ 26 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 26 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
+    |       |     tabs, found 1
+ 26 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 27 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 27 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
+    |       |     tabs, found 1
+ 27 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 27 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 28 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 28 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
+    |       |     tabs, found 1
+ 28 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 28 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 28 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 28 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 29 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 29 | [31mERROR[0m | [x] Line indented incorrectly; expected 2 tabs, found 1
+ 30 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 30 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
+    |       |     tabs, found 1
+ 30 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+    |       |     marks, or question marks
+ 31 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 31 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 3
+    |       |     tabs, found 1
+ 31 | [31mERROR[0m | [ ] Overriding WordPress globals is prohibited. Found
+    |       |     assignment to $errors
+ 31 | [31mERROR[0m | [x] String "Log in was unsuccessful." does not require
+    |       |     double quotes; use single quotes instead
+ 32 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 32 | [31mERROR[0m | [x] Line indented incorrectly; expected 2 tabs, found 1
+ 32 | [31mERROR[0m | [x] Blank line found after control structure
+ 34 | [31mERROR[0m | [x] Line indented incorrectly; expected 1 tabs, found 0
+ 34 | [31mERROR[0m | [x] Blank line found after control structure
+ 41 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 41 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 46 | [31mERROR[0m | [x] Line indented incorrectly; expected at least 1
+    |       |     tabs, found 0
+ 46 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found
+    |       |     'display_errors'.
+ 46 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 46 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 49 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 50 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 50 | [31mERROR[0m | [ ] All output should be run through an escaping
+    |       |     function (see the Security sections in the
+    |       |     WordPress Developer Handbooks), found 'h'.
+ 50 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 50 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 51 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 52 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 53 | [31mERROR[0m | [x] Tabs must be used to indent lines; spaces are not
+    |       |     allowed
+ 58 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 58 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 97 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 197ms; Memory: 8MB
+
+
+
+
+[1mFILE: /Users/bwille/Sites/Broadway/emails/dev/html/staff/logout.php[0m
+----------------------------------------------------------------------
+[1mFOUND 11 ERRORS AFFECTING 6 LINES[0m
+----------------------------------------------------------------------
+ 1 | [31mERROR[0m | [ ] Missing file doc comment
+ 2 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 2 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 4 | [31mERROR[0m | [ ] Inline comments must end in full-stops, exclamation
+   |       |     marks, or question marks
+ 5 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 5 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 7 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 7 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 7 | [31mERROR[0m | [x] Expected 1 spaces after opening bracket; 0 found
+ 7 | [31mERROR[0m | [x] Expected 1 spaces before closing bracket; 0 found
+ 9 | [31mERROR[0m | [x] A closing tag is not permitted at the end of a PHP
+   |       |     file
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 174ms; Memory: 8MB
 
 
 
@@ -7693,7 +7693,7 @@ Time: 218ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 184ms; Memory: 8MB
+Time: 183ms; Memory: 8MB
 
 
 
@@ -7732,7 +7732,7 @@ Time: 184ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 181ms; Memory: 8MB
+Time: 172ms; Memory: 8MB
 
 
 
@@ -7852,7 +7852,7 @@ Time: 181ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 53 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 185ms; Memory: 8MB
+Time: 179ms; Memory: 8MB
 
 
 
@@ -8076,7 +8076,7 @@ Time: 185ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 101 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 214ms; Memory: 8MB
+Time: 196ms; Memory: 8MB
 
 
 
@@ -8114,7 +8114,7 @@ Time: 214ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 190ms; Memory: 8MB
+Time: 186ms; Memory: 8MB
 
 
 
@@ -8527,7 +8527,7 @@ Time: 190ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 178 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 202ms; Memory: 8MB
+Time: 233ms; Memory: 8MB
 
 
 
@@ -8692,7 +8692,7 @@ Time: 202ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 77 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 195ms; Memory: 8MB
+Time: 222ms; Memory: 8MB
 
 
 
@@ -8811,7 +8811,7 @@ Time: 195ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 68 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 190ms; Memory: 8MB
+Time: 194ms; Memory: 8MB
 
 
 
@@ -8970,7 +8970,7 @@ Time: 190ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 87 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 191ms; Memory: 8MB
+Time: 217ms; Memory: 8MB
 
 
 
@@ -9037,7 +9037,7 @@ Time: 191ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 31 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 182ms; Memory: 8MB
+Time: 218ms; Memory: 8MB
 
 
 
@@ -9178,7 +9178,7 @@ Time: 182ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 72 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 201ms; Memory: 8MB
+Time: 203ms; Memory: 8MB
 
 
 
@@ -9301,7 +9301,7 @@ Time: 201ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 62 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 188ms; Memory: 8MB
+Time: 211ms; Memory: 8MB
 
 
 
@@ -9405,7 +9405,7 @@ Time: 188ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 43 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 207ms; Memory: 8MB
+Time: 216ms; Memory: 8MB
 
 
 
@@ -9533,7 +9533,7 @@ Time: 207ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 59 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 199ms; Memory: 8MB
+Time: 201ms; Memory: 8MB
 
 
 
@@ -9681,7 +9681,7 @@ Time: 199ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 88 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 193ms; Memory: 8MB
+Time: 192ms; Memory: 8MB
 
 
 
@@ -9869,7 +9869,7 @@ Time: 193ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 108 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 207ms; Memory: 8MB
+Time: 189ms; Memory: 8MB
 
 
 
@@ -11490,7 +11490,7 @@ Time: 207ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 805 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 236ms; Memory: 10MB
+Time: 255ms; Memory: 10MB
 
 
 
@@ -11623,7 +11623,7 @@ Time: 236ms; Memory: 10MB
 [1mPHPCBF CAN FIX THE 62 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 197ms; Memory: 8MB
+Time: 217ms; Memory: 8MB
 
 
 
@@ -12322,7 +12322,7 @@ Time: 197ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 373 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 236ms; Memory: 10MB
+Time: 247ms; Memory: 10MB
 
 
 
@@ -12471,7 +12471,7 @@ Time: 236ms; Memory: 10MB
 [1mPHPCBF CAN FIX THE 76 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 191ms; Memory: 8MB
+Time: 203ms; Memory: 8MB
 
 
 
@@ -12858,7 +12858,7 @@ Time: 191ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 191 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 221ms; Memory: 8MB
+Time: 214ms; Memory: 8MB
 
 
 
@@ -15150,4 +15150,4 @@ Time: 221ms; Memory: 8MB
 [1mPHPCBF CAN FIX THE 1127 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 270ms; Memory: 12MB
+Time: 307ms; Memory: 12MB

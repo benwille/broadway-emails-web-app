@@ -13,7 +13,7 @@ echo date("l jS \of F Y h:i:s A");
 
 <?php include('../private/shared/public_header.php');
 $stationName = 'rewind';
-include PUBLIC_PATH . '/stylesheets/' . $stationName . '.css'; ?>
+include PUBLIC_PATH . '/stylesheets/' . $stationName . '.min.css'; ?>
  ?>
 
 

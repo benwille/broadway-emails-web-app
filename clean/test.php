@@ -14,7 +14,7 @@ echo date( 'l jS \of F Y h:i:s A' );
 <?php
 require '../private/shared/public_header.php';
 $stationName = 'rewind';
-require PUBLIC_PATH . '/stylesheets/' . $stationName . '.css';
+require PUBLIC_PATH . '/stylesheets/' . $stationName . '.min.css';
 ?>
  ?>
 

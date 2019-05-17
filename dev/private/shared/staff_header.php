@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="<?php echo url_for('/stylesheets/bootstrap.min.css'); ?>" media="all">
-    <link rel="stylesheet" media="all" href="<?php echo url_for('/stylesheets/staff.css'); ?>" />
+    <link rel="stylesheet" media="all" href="<?php echo url_for('/stylesheets/staff.min.css'); ?>" />
     <link rel="shortcut icon" href="<?php // TODO: //echo url_for('/images/favicon.ico'); ?>" type="image/x-icon">
     <link rel="icon" href="<?php // TODO:  //echo url_for('/images/favicon.ico'); ?>" type="image/x-icon">
     <script src="<?php echo url_for('/js/jquery.min.js'); ?>"></script>

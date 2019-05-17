@@ -23,7 +23,7 @@ if(is_post_request()) {
       <?php
       include PUBLIC_PATH . '/stylesheets/custom.bootstrap.min.css';
       include PUBLIC_PATH . '/stylesheets/public.min.css';
-      include PUBLIC_PATH . '/stylesheets/' . $stationName . '.css'; ?>
+      include PUBLIC_PATH . '/stylesheets/' . $stationName . '.min.css'; ?>
     </style>
   </head>
 

@@ -28,7 +28,7 @@ if ( is_post_request() ) {
 		<?php
 		require PUBLIC_PATH . '/stylesheets/custom.bootstrap.min.css';
 		require PUBLIC_PATH . '/stylesheets/public.min.css';
-		require PUBLIC_PATH . '/stylesheets/' . $stationName . '.css';
+		require PUBLIC_PATH . '/stylesheets/' . $stationName . '.min.css';
 		?>
 	</style>
   </head>
