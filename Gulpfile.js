@@ -44,7 +44,14 @@ const paths = {
 		src: [ 'dev/html/images/' ],
 		dest: 'clean/html/images/'
 	}
-}
+};
+
+const source = {
+	css: {
+		src: 'public/stylesheets/*.css',
+		dest: 'public/stylesheets/'
+	}
+};
 
 // Minify CSS and Autoprefixer
 gulp.task('css', function() {
@@ -65,6 +72,21 @@ gulp.task('css', function() {
 	}))
 	// .pipe(sourcemaps.write(css + 'maps'))
 	.pipe(gulp.dest(paths.css.dest));
+});
+
+gulp.task('css-minify', function() {
+	return gulp.src(source.css.src)
+
+	pipe(postcss([
+		autoprefixer('last 2 versions', '> 1%')
+	]))
+	.pipe(gulp.dest(source.css.dest))
+	.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(rename({
+		suffix: ".min"
+	}))
+	.pipe(gulp.dest(source.css.dest));
+
 });
 
 // How to do mulpitle tasks

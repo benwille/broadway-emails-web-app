@@ -1,5 +1,5 @@
 a {
-  color: #2a3141;
+  color: #eceff1;
 }
 
 p{
@@ -98,7 +98,7 @@ p{
 	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 	*/
 		body,#bodyTable{
-			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/background-color:#0f1314;
 		}
 	/*
 	@tab Page
@@ -186,7 +186,7 @@ p{
 	@tip Set the background color and borders for your email's preheader area.
 	*/
 		#templatePreheader{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#0f1314;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -224,7 +224,7 @@ p{
 	@tip Set the background color and borders for your email's header area.
 	*/
 		#templateHeader{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#0f1314;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -262,7 +262,7 @@ p{
 	@tip Set the background color and borders for your email's body area.
 	*/
 		#templateBody, .templateBody{
-			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-color:#0f1314;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -276,7 +276,7 @@ p{
 	@tip Set the styling for your email's body text. Choose a size and color that is easy to read.
 	*/
 		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
-			/*@editable*/color:#202020;
+			/*@editable*/color:#e4e4e4;
 			/*@editable*/font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
@@ -288,7 +288,7 @@ p{
 	@tip Set the styling for your email's body links. Choose a color that helps them stand out from your text.
 	*/
 		#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
-			/*@editable*/color:#2a3141;
+			/*@editable*/color:#eceff1;
 			/*@editable*/font-weight:inherit;
 			/*@editable*/text-decoration:none;
 		}
@@ -298,7 +298,7 @@ p{
 	@tip Set the background color and borders for your email's footer area.
 	*/
 		#templateFooter{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#0f1314;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;

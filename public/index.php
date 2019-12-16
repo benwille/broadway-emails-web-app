@@ -30,7 +30,7 @@
 if ($featured) {
     ?>
 <tr><!-- Featured Section-->
-  <td valign="top" id="templateBody" style="border-width: 1px 1px 2px 1px; border-style: solid; border-color: #EAEAEA;">
+  <td valign="top" id="templateBody" style="border-width: 1px 1px 2px 1px; border-style: solid; border-color: #EAEAEA3A;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
   	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -45,10 +45,10 @@ if ($featured) {
               <tbody>
                 <tr>
                   <td>
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #0f1314;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
                             <div style="text-align: left;">FEATURED</div>
                           </td>
                         </tr>
@@ -79,7 +79,7 @@ if ($featured) {
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                     <a href="<?php echo $featured[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%201&utm_campaign=Broadway%20Emails" title="<?php echo h_decode($featured[0]->title) ?>" class="" target="_blank">
-                      <img align="center" alt="<?php echo h_decode($featured[0]->title) ?>" src="<?php echo $featured[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                      <img align="center" alt="<?php echo h_decode($featured[0]->title) ?>" src="<?php echo $featured[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
                 </tr>
@@ -147,7 +147,7 @@ if ($featured) {
                         <tr>
                           <td class="mcnCaptionRightImageContent" align="center" valign="top">
                             <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%202&utm_campaign=Broadway%20Emails">
-                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                             </a>
                           </td>
                         </tr>
@@ -181,7 +181,7 @@ if ($featured) {
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 9px 18px;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA3A;">
               <tbody>
                 <tr>
                   <td>
@@ -253,7 +253,7 @@ if ($featured) {
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width:100%;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #0f1314;">
               <tbody>
                 <tr>
                   <td>
@@ -286,7 +286,7 @@ if ($featured) {
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                     <a href="<?php echo $ad->link; ?>" title="<?php echo $ad->title; ?>" class="" target="_blank">
-                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
                 </tr>
@@ -309,7 +309,7 @@ endif;?>
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width:100%;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #0f1314;">
               <tbody>
                 <tr>
                   <td>
@@ -337,7 +337,7 @@ if ($posts) {
             if ($post) {
                 $category_url = $stationURL . 'category/' . $post[0]->category(); ?>
 <tr><!--Sections-->
-  <td valign="top" class="templateBody" style="border-width: 1px 1px 1px 1px; border-style: solid; border-color: #EAEAEA;">
+  <td valign="top" class="templateBody" style="border-width: 1px 1px 1px 1px; border-style: solid; border-color: #EAEAEA3A;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
   	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -352,15 +352,15 @@ if ($posts) {
               <tbody>
                 <tr>
                   <td>
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #0f1314;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
                             <div style="text-align: left; text-transform: uppercase;">
                               <strong><?php echo $post[0]->category(); ?></strong>
                             </div>
                           </td>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
                             <a href="<?php echo $category_url; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20See%20All&utm_campaign=Broadway%20Emails">
                               <span>See All »</span>
                             </a>
@@ -393,7 +393,7 @@ if ($posts) {
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                     <a href="<?php echo $post[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20Link%201&utm_campaign=Broadway%20Emails" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
-                      <img align="center" alt="<?php echo h_decode($post[0]->title) ?>" src="<?php echo $post[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                      <img align="center" alt="<?php echo h_decode($post[0]->title) ?>" src="<?php echo $post[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
                 </tr>
@@ -464,7 +464,7 @@ if ($posts) {
                         <tr>
                           <td class="mcnCaptionRightImageContent" align="center" valign="top">
                             <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%202&utm_campaign=Broadway%20Emails">
-                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                              <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                             </a>
                           </td>
                         </tr>
@@ -496,7 +496,7 @@ if ($posts) {
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 9px 18px;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA3A;">
               <tbody>
                 <tr>
                   <td>
@@ -569,10 +569,10 @@ if ($posts) {
               <tbody>
                 <tr>
                   <td>
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border-width: 1px 0; border-style: solid; border-color: #EAEAEA;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #0f1314;border-width: 1px 0; border-style: solid; border-color: #EAEAEA3A;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
                             <a href="<?php echo $category_url; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20See%20All&utm_campaign=Broadway%20Emails"><div style="text-align: center;">See All »</div></a>
                           </td>
                         </tr>
@@ -605,7 +605,7 @@ if ($posts) {
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width:100%;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #0f1314;">
               <tbody>
                 <tr>
                   <td>
@@ -637,7 +637,7 @@ if ($posts) {
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                     <a href="<?php echo $ad->link; ?>" title="<?php echo $ad->title; ?>" class="" target="_blank">
-                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
                 </tr>
@@ -659,7 +659,7 @@ endif;?>
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width:100%;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #0f1314;">
               <tbody>
                 <tr>
                   <td>
@@ -688,7 +688,7 @@ endif;?>
 <?php if ($latest) {
         ?>
 <tr><!--Latest-->
-  <td valign="top" class="templateBody" style="border: 1px solid #EAEAEA;">
+  <td valign="top" class="templateBody" style="border: 1px solid #EAEAEA3A;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
   	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -703,15 +703,15 @@ endif;?>
               <tbody>
                 <tr>
                   <td>
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #0f1314;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: bold;line-height: 125%;text-align: center;">
                             <div style="text-align: left; text-transform: uppercase;">
                               <strong>LATEST</strong>
                             </div>
                           </td>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
                             <a href="<?php echo $category_url; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Latest%20See%20All&utm_campaign=Broadway%20Emails">
                               <span>See All »</span>
                             </a>
@@ -792,10 +792,10 @@ endif;?>
               <tbody>
                 <tr>
                   <td>
-                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #FAFAFA;border-width: 1px 0; border-style: solid; border-color: #EAEAEA;">
+                    <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #0f1314;border-width: 1px 0; border-style: solid; border-color: #EAEAEA3A;">
                       <tbody>
                         <tr>
-                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
+                          <td valign="top" class="mcnTextContent" style="padding: 18px;color: #eceff1;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
                             <a href="<?php echo $category_url; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Latest%20See%20All&utm_campaign=Broadway%20Emails"><div style="text-align: center;">See All »</div></a>
                           </td>
                         </tr>
@@ -829,7 +829,7 @@ endif;?>
       <tbody class="mcnDividerBlockOuter">
         <tr>
           <td class="mcnDividerBlockInner" style="min-width:100%;">
-            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 20px solid #FAFAFA;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 20px solid #0f1314;">
               <tbody>
                 <tr>
                   <td>
@@ -862,7 +862,7 @@ endif;?>
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                     <a href="<?php echo $ad->link; ?>" title="<?php echo $ad->title; ?>" class="" target="_blank">
-                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF3A;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
                 </tr>
