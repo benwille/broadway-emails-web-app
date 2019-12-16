@@ -2,13 +2,13 @@
 
 @include media-breakpoint-up(sm) {
   h1 {
-    font-size:1.5rem;
+	font-size:1.5rem;
   }
 }
 
 @media (max-widht: 600px) {
   .h1,h1 {
-    font-size: 1rem !important;
+	font-size: 1rem !important;
   }
 }
 

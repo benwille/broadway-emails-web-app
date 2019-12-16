@@ -19,19 +19,19 @@ h4 a {
 
 @media screen and (min-width:40rem) {
   .card-img-overlay.hero {
-    display: flex !important;
+	display: flex !important;
   }
   .card-title-below {
-    display: none;
+	display: none;
   }
   .media img {
-    width:230px !important;
+	width:230px !important;
   }
 }
 
 @media screen and (max-width:39rem) {
   .media.list-group-item {
-    flex-wrap: wrap;
+	flex-wrap: wrap;
   }
 
 }
@@ -91,19 +91,19 @@ body {
 
 /* Media Queries */
   h2 {
-    font-size:1.5rem;
+	font-size:1.5rem;
   }
   /* .media img {
-    width:100px !important;
+	width:100px !important;
   } */
 
 
 @media screen and (max-width: 600px) {
   .h2,h2 {
-    font-size: 1.5rem !important;
+	font-size: 1.5rem !important;
   }
   .h4,h4 {
-    font-size: 1rem !important;
+	font-size: 1rem !important;
   }
 
 }

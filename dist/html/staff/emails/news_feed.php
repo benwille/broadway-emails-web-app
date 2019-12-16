@@ -1,64 +1,62 @@
-<?php require_once('../../../private/initialize.php'); ?>
+<?php require_once '../../../private/initialize.php'; ?>
 <?php require_login(); ?>
 
 <?php
-if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/emails/'));
-  }
+if ( ! isset( $_GET['station'] ) ) {
+	redirect_to( url_for( '/staff/emails/' ) );
+}
   $station = $_GET['station'];
-  foreach(Email::STATION_URL as $station_id => $station_url) {
-    if($station == $station_id) {
-    $stationURL = $station_url;
-    break;
-    }
-  }
- ?>
+foreach ( Email::STATION_URL as $station_id => $station_url ) {
+	if ( $station == $station_id ) {
+		$stationURL = $station_url;
+		break;
+	}
+}
+?>
 
 <?php
-	$feed = simplexml_load_file("https://www." . $stationURL . ".com/feed");
+	$feed    = simplexml_load_file( 'https://www.' . $stationURL . '.com/feed' );
 	$channel = $feed->channel;
-	$items = $channel->item;
+	$items   = $channel->item;
 
 	// var_dump($items[1]);
+if ( is_post_request() ) {
 
-if(is_post_request()) {
-
-  // Create record using post parameters
-  $args = $_POST['item'];
+	// Create record using post parameters
+	$args = $_POST['item'];
 	// var_dump($args);
 	$message = [];
-	$x = 0;
-	foreach ($args as $arg) {
-		$item = new Email($arg);
-		$result = $item->save();
+	$x       = 0;
+	foreach ( $args as $arg ) {
+		$item     = new Email( $arg );
+		$result   = $item->save();
 		$errors[] = $item->errors;
-		if($result === true) {
+		if ( $result === true ) {
 			$x++;
-			//Show all the articles uploaded
+			// Show all the articles uploaded
 			// echo '<pre>';
 			// print_r ($item);
 			// echo '</pre><br />';
-
-	    //$new_id = $task->id;
-	    // $session->message('The article was added successfully.');
-	    //redirect_to(url_for('/staff/posts/index.php?id=' . $new_id));
-	  } else {
-	    // show errors
+			// $new_id = $task->id;
+			// $session->message('The article was added successfully.');
+			// redirect_to(url_for('/staff/posts/index.php?id=' . $new_id));
+		} else {
+			// show errors
 			continue;
-	  }
+		}
 	}
 	// print_r ($item->shift_errors_array());
-	$msg = $x . ' were added successfully. ' . (10 - $x) . ' were duplicates.';
-	$session->message($msg);
+	$msg = $x . ' were added successfully. ' . ( 10 - $x ) . ' were duplicates.';
+	$session->message( $msg );
 
 } else {
-  // display the form
-  $item = new Email;
+	// display the form
+	$item = new Email();
 
 }
 ?>
 
-<!-- <script src="<?php //echo url_for('/js/jquery.slim.min.js'); ?>"></script>
+<!-- <script src="<?php // echo url_for('/js/jquery.slim.min.js'); ?>"></script>
 <script>
 jQuery(document).ready(function() {
 		setTimeout(function() {
@@ -69,8 +67,8 @@ jQuery(document).ready(function() {
 
 
 <?php $page_title = 'X96 Posts'; ?>
-<?php include(SHARED_PATH . '/staff_header.php'); ?>
-<?php echo display_errors($item->errors); ?>
+<?php require SHARED_PATH . '/staff_header.php'; ?>
+<?php echo display_errors( $item->errors ); ?>
 <div class="container">
 <form action="<?php echo '?station=' . $station; ?>" method="post" id="form">
 	<div class="table-responsive">
@@ -86,21 +84,22 @@ jQuery(document).ready(function() {
 			<?php $article = []; ?>
 			<?php
 				$i = 0;
-				while ($i < 10) { ?>
-			<?php $description = (explode("wp-content/uploads/",$items[$i]->description));
-				if (! isset($description[1])) {
-					$description[1] = NULL;
-					$image[0] = 'images/full-stadium-for-web.jpg';
+			while ( $i < 10 ) {
+				?>
+				<?php
+				$description = ( explode( 'wp-content/uploads/', $items[ $i ]->description ) );
+				if ( ! isset( $description[1] ) ) {
+					$description[1] = null;
+					$image[0]       = 'images/full-stadium-for-web.jpg';
 				} else {
-					$image = (explode("\"", $description[1]));
+					$image = ( explode( '"', $description[1] ) );
 				} // image Link
 
-				$date = date_create(h($items[$i]->pubDate), timezone_open("GMT"));
-				date_timezone_set($date, timezone_open('America/Denver'));
+				$date = date_create( h( $items[ $i ]->pubDate ), timezone_open( 'GMT' ) );
+				date_timezone_set( $date, timezone_open( 'America/Denver' ) );
 				// set date/time
-
-				$category = $items[$i]->category;
-				switch ($category) {
+				$category = $items[ $i ]->category;
+				switch ( $category ) {
 					case 'News':
 						$categoryID = 1;
 						break;
@@ -116,41 +115,43 @@ jQuery(document).ready(function() {
 					case 'ESPN 700 Interviews':
 						$categoryID = 4;
 						break;
-          case 'Real Salt Lake':
+					case 'Real Salt Lake':
 						$categoryID = 5;
 						break;
-          case 'Utah Jazz':
+					case 'Utah Jazz':
 						$categoryID = 6;
 						break;
-          case 'University of Utah':
+					case 'University of Utah':
 						$categoryID = 7;
 						break;
-				
+
 					default:
 						$categoryID = 0;
 						break;
 				}
-				$description = (explode("</div>",$items[$i]->description));
-				$excerpt = (explode("[",$description[1]));
+				$description = ( explode( '</div>', $items[ $i ]->description ) );
+				$excerpt     = ( explode( '[', $description[1] ) );
 				?>
 			<tr>
-					<td><input type="text" name="item[<?php echo h($i) ?>][title]"  value="<?php echo h($items[$i]->title); ?>" readonly></td>
-					<td><input type="number" name="item[<?php echo h($i) ?>][category]"  value="<?php echo h($categoryID); ?>"></td>
-					<td><input type="text" name="item[<?php echo h($i) ?>][link]"  value="<?php echo h($items[$i]->link); ?>" readonly></td>
-					<td><input type="text" name="item[<?php echo h($i) ?>][pubDate]"  value="<?php echo date_format($date, "Y-m-d H:i:s" ); ?>" placeholder="hello" readonly></td>
-					<td><input type="text" name="item[<?php echo h($i) ?>][imageLink]"  value="<?php echo("https://" . $stationURL . ".com/wp-content/uploads/" . h($image[0])); ?>" readonly></td>
-					<td><input type="text" name="item[<?php echo h($i) ?>][excerpt]"  value="<?php echo h(trim($excerpt[0])); ?>" readonly></td>
+					<td><input type="text" name="item[<?php echo h( $i ); ?>][title]"  value="<?php echo h( $items[ $i ]->title ); ?>" readonly></td>
+					<td><input type="number" name="item[<?php echo h( $i ); ?>][category]"  value="<?php echo h( $categoryID ); ?>"></td>
+					<td><input type="text" name="item[<?php echo h( $i ); ?>][link]"  value="<?php echo h( $items[ $i ]->link ); ?>" readonly></td>
+					<td><input type="text" name="item[<?php echo h( $i ); ?>][pubDate]"  value="<?php echo date_format( $date, 'Y-m-d H:i:s' ); ?>" placeholder="hello" readonly></td>
+					<td><input type="text" name="item[<?php echo h( $i ); ?>][imageLink]"  value="<?php echo( 'https://' . $stationURL . '.com/wp-content/uploads/' . h( $image[0] ) ); ?>" readonly></td>
+					<td><input type="text" name="item[<?php echo h( $i ); ?>][excerpt]"  value="<?php echo h( trim( $excerpt[0] ) ); ?>" readonly></td>
 			</tr>
-			<input type="hidden" name="item[<?php echo h($i) ?>][station]"  value="<?php echo $station; ?>" readonly>
+			<input type="hidden" name="item[<?php echo h( $i ); ?>][station]"  value="<?php echo $station; ?>" readonly>
 
-			<?php $i++;
-			 } ?>
+				<?php
+				$i++;
+			}
+			?>
 		</table>
 	</div>
 	<div id="operations">
 
-    <input type="submit" value="Add Articles" />
+	<input type="submit" value="Add Articles" />
   </div>
 </form>
 </div>
-<?php include(SHARED_PATH . '/staff_footer.php'); ?>
+<?php require SHARED_PATH . '/staff_footer.php'; ?>
