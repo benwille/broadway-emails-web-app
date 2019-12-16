@@ -4,7 +4,7 @@
   $admin = Admin::find_by_username($session->username);
 
   if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/'));
+  redirect_to(url_for('/staff/emails/index.php'));
   }
   $station = $_GET['station'];
   foreach(Email::STATION as $station_id => $station_name) {
@@ -41,7 +41,7 @@
       // $new_id = $task->id;
       // echo 'The post was updated successfully.';
       $session->message('The post was updated successfully.');
-      redirect_to(url_for('/staff/emails/?station=' . $station));
+      redirect_to(url_for('/staff/emails/index.php?station=' . $station));
 
 
     } else {
@@ -67,7 +67,7 @@
       <div class="ml-1">
         <a class="btn btn-primary" href="<?php echo url_for("staff/emails/new.php?station=") . $station; ?>">New Post</a>
       </div>
-      <form action="<?php echo url_for('/staff/emails/clear?station=' . $station); ?>" method="post">
+      <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
             <input type="hidden" name="post[position]" value="0" />
@@ -75,7 +75,7 @@
           </div>
         </div>
       </form>
-      <form action="<?php echo url_for('/staff/emails/clear?station=' . $station); ?>" method="post">
+      <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
             <input type="hidden" name="post[featured]" value='0' />
@@ -83,7 +83,7 @@
           </div>
         </div>
       </form>
-      <form action="<?php echo url_for('/staff/emails/clear?station=' . $station); ?>" method="post">
+      <form action="<?php echo url_for('/staff/emails/clear.php?station=' . $station); ?>" method="post">
         <div class="form-group row ml-1" id="">
           <div class="col-auto">
             <input type="hidden" name="post[featured]" value="0" />
@@ -93,7 +93,7 @@
         </div>
       </form>
       <div class="ml-auto">
-        <a class="btn btn-primary" href="<?php echo "email?station=" . $station; ?>" target="_blank">Create Email</a>
+        <a class="btn btn-primary" href="<?php echo url_for("/index.php?station=") . $station; ?>" target="_blank">Create Email</a>
       </div>
     </div><!-- Clear Buttons -->
 
@@ -115,7 +115,7 @@
         </tr>
         <?php foreach($featured as $post) { ?>
           <tr>
-            <form action="<?php echo '?id=' . h(u($post->id)) . '&station=' . $station ; ?>" method="post" id="postform">
+            <form action="<?php echo 'index.php?id=' . h(u($post->id)) . '&station=' . $station ; ?>" method="post" id="postform">
             <td><?php echo h($post->title); ?></td>
             <td class="align-middle">
               <select name="post[category]">
@@ -147,6 +147,18 @@
     	</table>
     </div><!-- Featured Posts -->
 
+    <!-- Ads -->
+    <div class="d-flex">
+      <h2>Ads</h2>
+      <div class="ml-auto">
+        <a class="btn btn-primary" href="<?php echo url_for("staff/ads/new.php?station=") . $station; ?>">New Ad</a>
+      </div>
+
+    </div>
+    <?php $ads = new Ad;
+    $ads->get_ads($station);?>
+    <!-- Ads -->
+
     <?php if ($station == 6) { ?>
       <h2>Interview Posts</h2>
       <?php
@@ -174,17 +186,56 @@
       $stallions->get_posts($station,8); ?>
     <?php } ?>
 
-    <h2>Contest Posts</h2>
+    <div class="d-flex">
+      <h2>Contest Posts</h2>
+      <div class="ml-auto"><form action="<?php echo url_for('/staff/emails/hide.php?station=' . $station); ?>" method="post">
+        <div class="form-group row ml-1" id="">
+          <div class="col-auto">
+            <input type="hidden" name="post[visible]" value='0' />
+            <input type="hidden" name="post[category]" value='3' />
+            <button class="btn btn-outline-primary" type="submit" name="commit" value="Hide Posts">Hide All Posts <i class='fas fa-angle-down'></i></button>
+          </div>
+        </div>
+      </form></div>
+    </div>
     <?php
     $contests = new Email;
     $contests->get_posts($station,3); ?>
 
-    <h2>News Posts</h2>
+    <div class="d-flex">
+      <h2>News Posts</h2>
+      <div class="ml-auto">
+        <form action="<?php echo url_for('/staff/emails/hide.php?station=' . $station); ?>" method="post">
+          <div class="form-group row ml-1" id="">
+            <div class="col-auto">
+              <input type="hidden" name="post[visible]" value='0' />
+              <input type="hidden" name="post[category]" value='1' />
+              <button class="btn btn-outline-primary" type="submit" name="commit" value="Hide Posts">Hide All Posts <i class='fas fa-angle-down'></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <?php
     $news = new Email;
     $news->get_posts($station,1); ?>
 
-    <h2>Life Posts</h2>
+
+    <div class="d-flex">
+      <h2>Life Posts</h2>
+      <div class="ml-auto">
+        <form action="<?php echo url_for('/staff/emails/hide.php?station=' . $station); ?>" method="post">
+          <div class="form-group row ml-1" id="">
+            <div class="col-auto">
+              <input type="hidden" name="post[visible]" value='0' />
+              <input type="hidden" name="post[category]" value='2' />
+              <button class="btn btn-outline-primary" type="submit" name="commit" value="Hide Posts">Hide All Posts <i class='fas fa-angle-down'></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <?php
     $life = new Email;
     $life->get_posts($station,2); ?>

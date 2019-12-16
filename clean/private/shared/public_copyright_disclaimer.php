@@ -1,1 +1,1 @@
-<p>Copyright <?php echo date( 'Y' ) . ', ' . $stationName; ?></p>
+<p>Copyright <?php echo date('Y') . ', ' . $stationName; ?></p>

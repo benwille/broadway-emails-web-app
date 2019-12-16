@@ -37,6 +37,51 @@ class Email extends DatabaseObject {
     6 => 'ESPN700Sports'
   ];
 
+  public const STATION_FB = [
+    1 => 'X96Music',
+    2 => 'mix1051utah',
+    3 => 'U92SLC',
+    4 => 'Rewind100.7',
+    5 => '1015TheEagle',
+    6 => 'ESPN700'
+  ];
+
+  public const STATION_TW = [
+    1 => 'X96',
+    2 => 'mix1051utah',
+    3 => 'U92SLC',
+    4 => 'Rewind1007fm',
+    5 => '1015TheEagleUT',
+    6 => 'ESPN700'
+  ];
+
+  public const STATION_IG = [
+    1 => 'x96fm',
+    2 => 'mix1051utah',
+    3 => 'U92SLC',
+    4 => 'Rewind1007fm',
+    5 => '1015TheEagleUT',
+    6 => 'ESPN700'
+  ];
+
+  public const STATION_APP = [
+    1 => 'https://itunes.apple.com/us/app/x96-kxrk/id655730921?mt=8',
+    2 => 'https://apps.apple.com/us/app/mix-105-1-utah/id653652578',
+    3 => 'https://apps.apple.com/us/app/u92-slc/id671489114',
+    4 => 'https://apps.apple.com/us/app/rewind-100-7/id656814346',
+    5 => 'https://apps.apple.com/us/app/1015-the-eagle/id653586558',
+    6 => 'https://apps.apple.com/us/app/espn-700-radio/id403281568'
+  ];
+
+  public const STATION_GP = [
+    1 => 'https://play.google.com/store/apps/details?id=com.broadway.kxrk',
+    2 => 'https://play.google.com/store/apps/details?id=com.broadwaymediagroup.kudd',
+    3 => 'https://play.google.com/store/apps/details?id=com.broadwaymediagroup.kuuu',
+    4 => 'https://play.google.com/store/apps/details?id=com.broadway.KYMV',
+    5 => 'https://play.google.com/store/apps/details?id=com.broadway.KEGA',
+    6 => 'https://play.google.com/store/apps/developer?id=Broadway+Media'
+  ];
+
   public const CATEGORY = [
     0 => 'Other',
     1 => 'News',

@@ -4,71 +4,71 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Email	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^class Email extends DatabaseObject {$/;"	class	line:3
-table_name	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  static protected $table_name = "posts";$/;"	variable	line:6
-table_name	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  static protected $table_name = "posts";$/;"	variable	line:6
-db_columns	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  static protected $db_columns = ['id', 'station', 'title', 'link', 'pubDate', 'imageLink', 'featured', 'position', 'category', 'excerpt', 'visible'];$/;"	variable	line:7
-db_columns	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  static protected $db_columns = ['id', 'station', 'title', 'link', 'pubDate', 'imageLink', 'featured', 'position', 'category', 'excerpt', 'visible'];$/;"	variable	line:7
-id	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $id;$/;"	variable	line:9
-station	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $station;$/;"	variable	line:10
-title	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $title;$/;"	variable	line:11
-link	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $link;$/;"	variable	line:12
-pubDate	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $pubDate;$/;"	variable	line:13
-imageLink	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $imageLink;$/;"	variable	line:14
-imageThumb	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $imageThumb;$/;"	variable	line:15
-featured	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $featured = 0;$/;"	variable	line:16
-featured	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $featured = 0;$/;"	variable	line:16
-position	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $position = 0;$/;"	variable	line:17
-position	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $position = 0;$/;"	variable	line:17
-category	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $category;$/;"	variable	line:18
-excerpt	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $excerpt;$/;"	variable	line:19
-visible	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^  public $visible;$/;"	variable	line:20
-__construct	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^    public function __construct($args=[]) {$/;"	function	line:52
-station	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->station = $args['station'] ?? '';$/;"	variable	line:54
-title	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->title = $args['title'] ?? '';$/;"	variable	line:55
-link	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->link = $args['link'] ?? '';$/;"	variable	line:56
-pubDate	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->pubDate = $args['pubDate'] ?? NULL;$/;"	variable	line:57
-imageLink	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->imageLink = $args['imageLink'] ?? '';$/;"	variable	line:58
-featured	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->featured = $args['featured'] ?? 0;$/;"	variable	line:59
-position	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->position = $args['position'] ?? 0;$/;"	variable	line:60
-category	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->category = $args['category'] ?? '';$/;"	variable	line:61
-excerpt	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->excerpt = $args['excerpt'] ?? '';$/;"	variable	line:62
-visible	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      $this->visible = $args['visible'] ?? '';$/;"	variable	line:63
-station	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function station() {$/;"	function	line:68
-category	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function category() {$/;"	function	line:76
-find_by_date	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      static public function find_by_date($date) {$/;"	function	line:84
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $sql = "SELECT * FROM " . static::$table_name . " ";$/;"	variable	line:85
-obj_array	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $obj_array = static::find_by_sql($sql);$/;"	variable	line:87
-find_by_title	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      static public function find_by_title($title) {$/;"	function	line:95
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $sql = "SELECT * FROM " . static::$table_name . " ";$/;"	variable	line:96
-obj_array	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $obj_array = static::find_by_sql($sql);$/;"	variable	line:98
-find_by_link	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      static public function find_by_link($link) {$/;"	function	line:106
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $sql = "SELECT * FROM " . static::$table_name . " ";$/;"	variable	line:107
-obj_array	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $obj_array = static::find_by_sql($sql);$/;"	variable	line:109
-shift_errors_array	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      \/\/ public function shift_errors_array() {$/;"	function	line:117
-new_errors	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      \/\/   $new_errors = $errors;$/;"	variable	line:119
-errors	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      \/\/   $errors = call_user_func_array('array_merge', $new_errors);$/;"	variable	line:120
-featured	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function featured() {$/;"	function	line:124
-visible	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function visible() {$/;"	function	line:130
-pubDate	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function pubDate() {$/;"	function	line:136
-date	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $date = date_create( $this->pubDate);$/;"	variable	line:137
-dateformat	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $dateformat = date_format($date, 'D d M Y h:i A');$/;"	variable	line:138
-validate	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      protected function validate() {$/;"	function	line:142
-errors	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $this->errors = [];$/;"	variable	line:143
-hero	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        \/\/ if ($this->promoted == 0 && $this->hero == 1) {$/;"	variable	line:169
-team_hero	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        \/\/ if ($this->team_featured == 1 && $this->team_hero == 1) {$/;"	variable	line:185
-post_query	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      static public function post_query($station, $category, $featured) {$/;"	function	line:192
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $sql = "SELECT * FROM posts ";$/;"	variable	line:193
-results	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $results = Email::find_by_sql($sql);$/;"	variable	line:200
-get_posts	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function get_posts($station, $category) {$/;"	function	line:204
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        \/\/ $sql = "SELECT * FROM posts ";$/;"	variable	line:209
-results	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        \/\/ $results = Email::find_by_sql($sql);$/;"	variable	line:216
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $sql = "(SELECT * FROM posts ";$/;"	variable	line:217
-results	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $results = Email::find_by_sql($sql);$/;"	variable	line:233
-results	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        \/\/ $results = $this->post_query($station, $category, $featured);$/;"	variable	line:239
-category	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $category = $this->category(); ?>$/;"	variable	line:241
-category_id	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^                    <?php foreach(Email::CATEGORY as $category_id => $category_name) { if ($station !=6) {$/;"	variable	line:266
-contest_posts	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^      public function contest_posts($station) {$/;"	function	line:299
-sql	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $sql = "SELECT * FROM posts ";$/;"	variable	line:301
-contests	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^        $contests = Email::find_by_sql($sql); ?>$/;"	variable	line:305
-category_id	/Users/bwille/Sites/Broadway/emails/dist/private/classes/email.class.php	/^                  <?php foreach(Email::CATEGORY as $category_id => $category_name) { ?>$/;"	variable	line:329
+Spot	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^class Spot {$/;"	class	line:3
+firstname	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $firstname;$/;"	variable	line:5
+lastname	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $lastname;$/;"	variable	line:6
+personID	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  private $personID;$/;"	variable	line:7
+email	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $email;$/;"	variable	line:8
+client	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $client;$/;"	variable	line:9
+title	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $title;$/;"	variable	line:10
+duedate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $duedate;$/;"	variable	line:11
+startdate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $startdate;$/;"	variable	line:12
+enddate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $enddate;$/;"	variable	line:13
+adtype	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $adtype;$/;"	variable	line:14
+length	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $length;$/;"	variable	line:15
+rotation	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $rotation;$/;"	variable	line:16
+stations	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $stations;$/;"	variable	line:17
+script	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $script;$/;"	variable	line:18
+notes	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public $notes;$/;"	variable	line:19
+__construct	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function __construct($args=[]) {$/;"	function	line:21
+firstname	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->firstname = $args['first'] ?? '';$/;"	variable	line:22
+lastname	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->lastname = $args['last'] ?? '';$/;"	variable	line:23
+email	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->email = $args['email'] ?? '';$/;"	variable	line:24
+client	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->client = $args['client'] ?? '';$/;"	variable	line:25
+title	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->title = $args['title'] ?? '';$/;"	variable	line:26
+duedaate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->duedaate = $args['duedate'] ?? '';$/;"	variable	line:27
+startdate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->startdate = $args['startdate'] ?? '';$/;"	variable	line:28
+enddate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->enddate = $args['enddate'] ?? '';$/;"	variable	line:29
+adtype	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->adtype = $args['adtype'] ?? '';$/;"	variable	line:30
+length	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->length = $args['length'] ?? '';$/;"	variable	line:31
+rotation	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->rotation = $args['rotation'] ?? '';$/;"	variable	line:32
+stations	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->stations = $args['station'] ?? [];$/;"	variable	line:33
+script	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->script = $args['script'] ?? '';$/;"	variable	line:34
+notes	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->notes = $args['notes'] ?? '';$/;"	variable	line:35
+cartid	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->cartid = "API" . mt_rand(1000,9999);$/;"	variable	line:36
+errors	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->errors = [];$/;"	variable	line:37
+getPersonID	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function getPersonID() {$/;"	function	line:41
+ch	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $ch = curl_init('http:\/\/api-v2.internal.vcreative.net\/app_test.php\/lov');$/;"	variable	line:42
+header	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $header = array($/;"	variable	line:44
+curl	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $curl = curl_exec($ch);$/;"	variable	line:51
+vcreative	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $vcreative = json_decode($curl, JSON_PRETTY_PRINT)['persons'];$/;"	variable	line:52
+personID	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^                $this->personID = $person['personid'];$/;"	variable	line:58
+post	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function post() {$/;"	function	line:67
+start	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $start = microtime(true);$/;"	variable	line:68
+stations	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $stations = [];$/;"	variable	line:77
+stationJSON	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $stationJSON = implode(", ", $stations);$/;"	variable	line:86
+postfields	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $postfields = '{$/;"	variable	line:88
+end	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $end = microtime(true) - $start;$/;"	variable	line:115
+ch	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $ch = curl_init('http:\/\/api-v2.internal.vcreative.net\/app_test.php\/spot_update\/0');$/;"	variable	line:119
+header	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $header = array($/;"	variable	line:121
+curl	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    \/\/ $curl = curl_exec($ch);$/;"	variable	line:130
+vcreative	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    \/\/ \/\/ $vcreative = json_decode($curl, JSON_PRETTY_PRINT);$/;"	variable	line:131
+validate	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  protected function validate() {$/;"	function	line:138
+errors	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $this->errors = [];$/;"	variable	line:139
+find_by_username	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  static public function find_by_username($username) {$/;"	function	line:184
+sql	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $sql = "SELECT * FROM " . static::$table_name . " ";$/;"	variable	line:185
+obj_array	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^    $obj_array = static::find_by_sql($sql);$/;"	variable	line:187
+login	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function login($admin) {$/;"	function	line:195
+admin_id	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $this->admin_id = $_SESSION['admin_id'] = $admin->id;$/;"	variable	line:198
+username	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $this->username = $_SESSION['username'] = $admin->username;$/;"	variable	line:199
+last_login	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $this->last_login = $_SESSION['last_login'] = time();$/;"	variable	line:200
+is_logged_in	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function is_logged_in() {$/;"	function	line:205
+admin_id	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function admin_id() {$/;"	function	line:210
+logout	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function logout() {$/;"	function	line:214
+check_stored_login	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  private function check_stored_login() {$/;"	function	line:225
+admin_id	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $this->admin_id = $_SESSION['admin_id'];$/;"	variable	line:227
+username	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $this->username = $_SESSION['username'];$/;"	variable	line:228
+last_login	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^      $this->last_login = $_SESSION['last_login'];$/;"	variable	line:229
+last_login_is_recent	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  private function last_login_is_recent() {$/;"	function	line:233
+message	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function message($msg="") {$/;"	function	line:243
+clear_message	/Users/bwille/Sites/Broadway/emails/private/classes/spot.class.php	/^  public function clear_message() {$/;"	function	line:256

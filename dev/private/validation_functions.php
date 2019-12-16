@@ -93,6 +93,17 @@
     return preg_match($email_regex, $value) === 1;
   }
 
+  // has_valid_url_format('http://google.com')
+  // * validate correct format for URLs
+  // * format: [chars]@[chars].[2+ letters]
+  // * preg_match is helpful, uses a regular expression
+  //    returns 1 for a match, 0 for no match
+  //    http://php.net/manual/en/function.preg-match.php
+  function has_valid_url_format($value) {
+    $email_regex = 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)';
+    return preg_match($email_regex, $value) === 1;
+  }
+
   // has_unique_username('johnqpublic')
   // * Validates uniqueness of admins.username
   // * For new records, provide only the username.

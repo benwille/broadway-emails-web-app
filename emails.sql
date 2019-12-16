@@ -26,3 +26,15 @@ CREATE TABLE `admins` (
   PRIMARY KEY (`id`),
   KEY `index_username` (`username`)
 );
+
+DROP TABLE IF EXISTS `ads`;
+CREATE TABLE `ads` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `imageLink` varchar(255) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `position` tinyint(1) DEFAULT 1,
+  `station` longtext,
+  `visible` tinyint(1) DEFAULT 1,
+  PRIMARY KEY (`id`)
+);

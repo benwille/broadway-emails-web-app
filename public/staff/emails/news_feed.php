@@ -19,7 +19,10 @@ if(!isset($_GET['station'])) {
 	$channel = $feed->channel;
 	$items = $channel->item;
 
-	// var_dump($items[1]);
+	// foreach($items[1]->category as $category) {
+	// 	echo $category;
+	// };
+  // die;
 
 if(is_post_request()) {
 
@@ -99,24 +102,49 @@ jQuery(document).ready(function() {
 				date_timezone_set($date, timezone_open('America/Denver'));
 				// set date/time
 
-				$category = $items[$i]->category;
-				switch ($category) {
-					case 'News':
+				// $category = $items[$i]->category;
+				$c = 0;
+				$len = count($items[$i]->category);
+				foreach ($items[$i]->category as $category) {
+
+					switch ($category) {
+						case 'News':
 						$categoryID = 1;
 						break;
-					case 'Music':
+						case 'Music':
 						$categoryID = 1;
 						break;
-					case 'Life':
+						case 'Life':
 						$categoryID = 2;
 						break;
-					case 'Contests':
+						case 'Contests':
 						$categoryID = 3;
 						break;
+						// case 'ESPN 700 Interviews':
+						// $categoryID = 4;
+						// break;
+						case 'RSL':
+						$categoryID = 5;
+						break;
+						case 'Utah Jazz':
+						$categoryID = 6;
+						break;
+						case 'University of Utah':
+						$categoryID = 7;
+						break;
 
-					default:
+						default:
 						$categoryID = 0;
 						break;
+					}
+
+					if($c < $len - 1) {
+						if ($categoryID === 0) {
+							$c++;
+							continue;
+						}
+					}
+					break;
 				}
 				$description = (explode("</div>",$items[$i]->description));
 				$excerpt = (explode("[",$description[1]));

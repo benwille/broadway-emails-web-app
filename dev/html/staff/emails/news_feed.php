@@ -3,7 +3,7 @@
 
 <?php
 if(!isset($_GET['station'])) {
-  redirect_to(url_for('/staff/emails/'));
+  redirect_to(url_for('/staff/emails/index.php'));
   }
   $station = $_GET['station'];
   foreach(Email::STATION_URL as $station_id => $station_url) {
@@ -19,7 +19,10 @@ if(!isset($_GET['station'])) {
 	$channel = $feed->channel;
 	$items = $channel->item;
 
-	// var_dump($items[1]);
+	// foreach($items[1]->category as $category) {
+	// 	echo $category;
+	// };
+  // die;
 
 if(is_post_request()) {
 
@@ -72,7 +75,7 @@ jQuery(document).ready(function() {
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 <?php echo display_errors($item->errors); ?>
 <div class="container">
-<form action="<?php echo '?station=' . $station; ?>" method="post" id="form">
+<form action="<?php echo 'news_feed.php?station=' . $station; ?>" method="post" id="form">
 	<div class="table-responsive">
 		<table class="list table">
 			<tr>
@@ -99,36 +102,49 @@ jQuery(document).ready(function() {
 				date_timezone_set($date, timezone_open('America/Denver'));
 				// set date/time
 
-				$category = $items[$i]->category;
-				switch ($category) {
-					case 'News':
+				// $category = $items[$i]->category;
+				$c = 0;
+				$len = count($items[$i]->category);
+				foreach ($items[$i]->category as $category) {
+
+					switch ($category) {
+						case 'News':
 						$categoryID = 1;
 						break;
-					case 'Music':
+						case 'Music':
 						$categoryID = 1;
 						break;
-					case 'Life':
+						case 'Life':
 						$categoryID = 2;
 						break;
-					case 'Contests':
+						case 'Contests':
 						$categoryID = 3;
 						break;
-					case 'ESPN 700 Interviews':
-						$categoryID = 4;
-						break;
-          case 'Real Salt Lake':
+						// case 'ESPN 700 Interviews':
+						// $categoryID = 4;
+						// break;
+						case 'RSL':
 						$categoryID = 5;
 						break;
-          case 'Utah Jazz':
+						case 'Utah Jazz':
 						$categoryID = 6;
 						break;
-          case 'University of Utah':
+						case 'University of Utah':
 						$categoryID = 7;
 						break;
-				
-					default:
+
+						default:
 						$categoryID = 0;
 						break;
+					}
+
+					if($c < $len - 1) {
+						if ($categoryID === 0) {
+							$c++;
+							continue;
+						}
+					}
+					break;
 				}
 				$description = (explode("</div>",$items[$i]->description));
 				$excerpt = (explode("[",$description[1]));

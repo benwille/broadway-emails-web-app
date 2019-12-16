@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="<?php // TODO: //echo url_for('/images/favicon.ico'); ?>" type="image/x-icon">
     <link rel="icon" href="<?php // TODO:  //echo url_for('/images/favicon.ico'); ?>" type="image/x-icon">
     <script src="<?php echo url_for('/js/jquery.min.js'); ?>"></script>
-
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <?php // TODO:  ?>
     <!-- <meta property="og:url"                content="<?php //echo getURL(); ?>" />
     <meta property="og:title"              content="Task Master - <?php //echo h($page_title); ?>" />

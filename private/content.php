@@ -25,4 +25,16 @@ if ($station == 6) {
   );
 }
 
+
+$featuredAds = Ad::ad_query($station, 0);
+
+$ads = array (
+  $contestAds = Ad::ad_query($station, 1),
+  $newsAds = Ad::ad_query($station, 2),
+  $lifeAds = Ad::ad_query($station, 3),
+);
+
+$footerAds = Ad::ad_query($station, 4);
+
+
  ?>

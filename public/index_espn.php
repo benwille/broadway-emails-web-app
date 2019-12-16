@@ -75,7 +75,7 @@ if ($featured) {
               <tbody>
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
-                    <a href="<?php echo $featured[0]->link ?>" title="<?php echo h_decode($featured[0]->title) ?>" class="" target="_blank">
+                    <a href="<?php echo $featured[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%201&utm_campaign=Broadway%20Emails" title="<?php echo h_decode($featured[0]->title) ?>" class="" target="_blank">
                       <img align="center" alt="<?php echo h_decode($featured[0]->title) ?>" src="<?php echo $featured[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
@@ -103,7 +103,7 @@ if ($featured) {
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                     <h2>
-                      <a href="<?php echo $featured[0]->link ?>" target="_blank"><?php echo h_decode($featured[0]->title) ?></a>
+                      <a href="<?php echo $featured[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%201&utm_campaign=Broadway%20Emails" target="_blank"><?php echo h_decode($featured[0]->title) ?></a>
                     </h2>
                     <p>
                       <?php echo h_decode($featured[0]->excerpt); ?>
@@ -142,7 +142,7 @@ if ($featured) {
                       <tbody>
                         <tr>
                           <td class="mcnCaptionRightImageContent" align="center" valign="top">
-                            <a href="<?php echo $post->link; ?>">
+                            <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%202&utm_campaign=Broadway%20Emails">
                               <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
                             </a>
                           </td>
@@ -154,7 +154,7 @@ if ($featured) {
                         <tr>
                           <td valign="top" class="mcnTextContent">
                             <h4 class="null">
-                              <a href="<?php echo $post->link; ?>">
+                              <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%202&utm_campaign=Broadway%20Emails">
                                 <?php echo h_decode($post->title); ?>
                               </a>
                             </h4>
@@ -211,7 +211,7 @@ if ($featured) {
               <tbody>
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
-                    <a href="<?php echo $post->link; ?>">
+                    <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Featured%20Link%20<?php echo $i + 1; ?>&utm_campaign=Broadway%20Emails">
                       <?php echo h_decode($post->title); ?>
                     </a>
                   </td>
@@ -234,6 +234,64 @@ if ($featured) {
   </td>
 </tr><!-- Featured Section-->
 <?php } ?>
+
+<?php if ($featuredAds): ?>
+
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
+
+<?php foreach($featuredAds as $ad): ?>
+
+<tr>
+  <td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $ad->link; ?>" title="<?php echo $ad->title; ?>" class="" target="_blank">
+                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+<?php
+endforeach;
+endif;?>
 
 <tr><!--Divider-->
   <td valign="top" class="templateBody">
@@ -293,7 +351,7 @@ if ($sports_posts) {
                             </div>
                           </td>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
-                            <a href="<?php echo $category_url;?>">
+                            <a href="<?php echo $category_url;?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20See%20All&utm_campaign=Broadway%20Emails">
                               <span>See All »</span>
                             </a>
                           </td>
@@ -324,7 +382,7 @@ if ($sports_posts) {
               <tbody>
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
-                    <a href="<?php echo $post[0]->link ?>" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
+                    <a href="<?php echo $post[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20Link%201&utm_campaign=Broadway%20Emails" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
                       <img align="center" alt="<?php echo h_decode($post[0]->title) ?>" src="<?php echo $post[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
@@ -352,7 +410,7 @@ if ($sports_posts) {
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                     <h2>
-                      <a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
+                      <a href="<?php echo $post[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20Link%201&utm_campaign=Broadway%20Emails" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
                     </h2>
                     <p>
                       <?php echo h_decode($post[0]->excerpt); ?>
@@ -394,7 +452,7 @@ if ($sports_posts) {
                       <tbody>
                         <tr>
                           <td class="mcnCaptionRightImageContent" align="center" valign="top">
-                            <a href="<?php echo $post->link; ?>">
+                            <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%202&utm_campaign=Broadway%20Emails">
                               <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
                             </a>
                           </td>
@@ -406,7 +464,7 @@ if ($sports_posts) {
                         <tr>
                           <td valign="top" class="mcnTextContent">
                             <h4 class="null">
-                              <a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
+                              <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%202&utm_campaign=Broadway%20Emails"><?php echo h_decode($post->title); ?></a>
                             </h4>
                             <p>
                               <?php echo h_decode($post->excerpt); ?>
@@ -461,7 +519,7 @@ if ($sports_posts) {
               <tbody>
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
-                    <a href="<?php echo $post->link; ?>">
+                    <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%20<?php echo $i + 1;?>&utm_campaign=Broadway%20Emails">
                       <?php echo h_decode($post->title); ?>
                     </a>
                   </td>
@@ -499,7 +557,9 @@ if ($sports_posts) {
                       <tbody>
                         <tr>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
-                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                            <a href="<?php echo $category_url;?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20See%20All&utm_campaign=Broadway%20Emails">
+                              <div style="text-align: center;">See All »</div>
+                            </a>
                           </td>
                         </tr>
                       </tbody>
@@ -551,6 +611,7 @@ if ($sports_posts) {
 <?php }}} ?>
 
 <?php
+$a = 0;
 if ($posts) {
   // var_dump($sports_posts);
   foreach ($posts as $post) {
@@ -582,7 +643,7 @@ if ($posts) {
                             </div>
                           </td>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
-                            <a href="<?php echo $category_url;?>">
+                            <a href="<?php echo $category_url;?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20See%20All&utm_campaign=Broadway%20Emails">
                               <span>See All »</span>
                             </a>
                           </td>
@@ -613,7 +674,7 @@ if ($posts) {
               <tbody>
                 <tr>
                   <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
-                    <a href="<?php echo $post[0]->link ?>" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
+                    <a href="<?php echo $post[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20Link%201&utm_campaign=Broadway%20Emails" title="<?php echo h_decode($post[0]->title) ?>" class="" target="_blank">
                       <img align="center" alt="<?php echo h_decode($post[0]->title) ?>" src="<?php echo $post[0]->imageLink ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
                     </a>
                   </td>
@@ -641,7 +702,7 @@ if ($posts) {
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                     <h2>
-                      <a href="<?php echo $post[0]->link ?>" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
+                      <a href="<?php echo $post[0]->link ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post[0]->category();?>%20Link%201&utm_campaign=Broadway%20Emails" target="_blank"><?php echo h_decode($post[0]->title) ?></a>
                     </h2>
                     <p>
                       <?php echo h_decode($post[0]->excerpt); ?>
@@ -683,7 +744,7 @@ if ($posts) {
                       <tbody>
                         <tr>
                           <td class="mcnCaptionRightImageContent" align="center" valign="top">
-                            <a href="<?php echo $post->link; ?>">
+                            <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%202&utm_campaign=Broadway%20Emails">
                               <img alt="<?php echo h_decode($post->title) ?>" src="<?php echo $post->imageLink ?>" width="264" style="max-width: 887px;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
                             </a>
                           </td>
@@ -695,7 +756,7 @@ if ($posts) {
                         <tr>
                           <td valign="top" class="mcnTextContent">
                             <h4 class="null">
-                              <a href="<?php echo $post->link; ?>"><?php echo h_decode($post->title); ?></a>
+                              <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%202&utm_campaign=Broadway%20Emails"><?php echo h_decode($post->title); ?></a>
                             </h4>
                             <p>
                               <?php echo h_decode($post->excerpt); ?>
@@ -750,7 +811,7 @@ if ($posts) {
               <tbody>
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
-                    <a href="<?php echo $post->link; ?>">
+                    <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20Link%20<?php echo $i + 1;?>&utm_campaign=Broadway%20Emails">
                       <?php echo h_decode($post->title); ?>
                     </a>
                   </td>
@@ -788,7 +849,9 @@ if ($posts) {
                       <tbody>
                         <tr>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
-                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                            <a href="<?php echo $category_url;?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=<?php echo $post->category();?>%20See%20All&utm_campaign=Broadway%20Emails">
+                              <div style="text-align: center;">See All »</div>
+                            </a>
                           </td>
                         </tr>
                       </tbody>
@@ -811,6 +874,8 @@ if ($posts) {
     </table>
   </td>
 </tr><!--Sections-->
+
+<?php if ($ads[$a]): ?>
 
 <tr><!--Divider-->
   <td valign="top" class="templateBody">
@@ -837,7 +902,63 @@ if ($posts) {
     </table>
   </td>
 </tr><!--Divider-->
-<?php }}} ?>
+
+<?php foreach($ads[$a] as $ad): ?>
+<tr>
+  <td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $ad->link; ?>" title="<?php echo $ad->title; ?>" class="" target="_blank">
+                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+<?php
+endforeach;
+endif;?>
+
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 50px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
+<?php }
+    $a++;
+  }} ?>
 
 <?php if ($latest) { ?>
 <tr><!--Latest-->
@@ -865,7 +986,7 @@ if ($posts) {
                             </div>
                           </td>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: right;">
-                            <a href="<?php echo $category_url;?>">
+                            <a href="<?php echo $category_url;?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Latest%20See%20All&utm_campaign=Broadway%20Emails">
                               <span>See All »</span>
                             </a>
                           </td>
@@ -909,7 +1030,7 @@ if ($posts) {
               <tbody>
                 <tr>
                   <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px; line-height: 150%;">
-                    <a href="<?php echo $post->link; ?>">
+                    <a href="<?php echo $post->link; ?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Latest%20Link%20<?php echo $i + 1; ?>&utm_campaign=Broadway%20Emails">
                       <?php echo h_decode($post->title); ?>
                     </a>
                   </td>
@@ -947,7 +1068,7 @@ if ($posts) {
                       <tbody>
                         <tr>
                           <td valign="top" class="mcnTextContent" style="padding: 18px;color: #1F2529;font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 125%;text-align: center;">
-                            <a href="<?php echo $category_url;?>"><div style="text-align: center;">See All »</div></a>
+                            <a href="<?php echo $category_url;?>?utm_source=<?php echo $stationName; ?>%20Email&utm_medium=Latest%20See%20All&utm_campaign=Broadway%20Emails"><div style="text-align: center;">See All »</div></a>
                           </td>
                         </tr>
                       </tbody>
@@ -970,6 +1091,65 @@ if ($posts) {
     </table>
   </td>
 </tr><!--Latest-->
+
+<?php if ($footerAds): ?>
+
+<tr><!--Divider-->
+  <td valign="top" class="templateBody">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+        <tr>
+          <td class="mcnDividerBlockInner" style="min-width:100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 20px solid #FAFAFA;">
+              <tbody>
+                <tr>
+                  <td>
+                    <span></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+            -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr><!--Divider-->
+
+<?php foreach($footerAds as $ad): ?>
+
+<tr>
+  <td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+        <tr>
+          <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+            <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+              <tbody>
+                <tr>
+                  <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                    <a href="<?php echo $ad->link; ?>" title="<?php echo $ad->title; ?>" class="" target="_blank">
+                      <img align="center" alt="" src="<?php echo $ad->imageLink; ?>" width="564" style="max-width: 887px;padding-bottom: 0px;vertical-align: bottom;display: inline !important;border: 1px solid #FFFFFF;border-radius: 1%;" class="mcnImage">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+<?php
+endforeach;
+endif;?>
+
 <?php } ?>
 
 <?php include(SHARED_PATH . '/public_footer.php'); ?>
