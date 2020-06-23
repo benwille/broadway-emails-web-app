@@ -140,3 +140,6 @@
 
 
   <?php echo display_session_message(); ?>
+  <div id="message" style="display:none">
+
+  </div>

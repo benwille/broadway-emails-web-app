@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+		"node": false,
+		"jquery": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-multiple-empty-lines": "warn",
+    "vars-on-top": "off",
+    "semi": [1,"always"],
+		"no-console": "warn"
+  }
+}

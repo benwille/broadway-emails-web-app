@@ -116,31 +116,31 @@
         <?php foreach($featured as $post) { ?>
           <tr>
             <form action="<?php echo 'index.php?id=' . h(u($post->id)) . '&station=' . $station ; ?>" method="post" id="postform">
-            <td><?php echo h($post->title); ?></td>
-            <td class="align-middle">
-              <select name="post[category]">
-                <option value=""></option>
-                <?php foreach(Email::CATEGORY as $category_id => $category_name) { if ($station !=6) {
-                  if ($category_id > 3) {
-                    break;
-                  }
-                }?>
-                <option value="<?php echo $category_id; ?>" <?php if($post->category == $category_id) { echo 'selected'; } ?>><?php echo $category_name; ?></option>
+              <td><?php echo h($post->title); ?></td>
+              <td class="align-middle">
+                <select name="post[category]">
+                  <option value=""></option>
+                  <?php foreach(Email::CATEGORY as $category_id => $category_name) { if ($station !=6) {
+                    if ($category_id > 3) {
+                      break;
+                    }
+                  }?>
+                  <option value="<?php echo $category_id; ?>" <?php if($post->category == $category_id) { echo 'selected'; } ?>><?php echo $category_name; ?></option>
+                <?php } ?>
+                </select>
+              </td>
+              <td><?php echo h($post->pubDate()); ?></td>
+              <td><input type="number" name="post[position]" value="<?php echo h($post->position);?>" min="1" max="10" /></td>
+              <td class="text-center align-middle">
+                <input type="hidden" name="post[featured]" value="0" />
+                <input type="checkbox" name="post[featured]" value="1"<?php if($post->featured()) { echo " checked"; } ?> />
+              </td>
+              <td class="align-middle"><a class="action" href="<?php echo $post->link; ?>" target="_blank">View</a></td>
+              <?php if ($admin->is_admin()) { ?>
+              <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/edit.php?id=' . h(u($post->id)) . '&station=' . h(u($post->station))); ?>">Edit</a></td>
+              <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/delete.php?id=' . h(u($post->id)) . '&station=' . h(u($post->station))); ?>">Delete</a></td>
+              <td class="align-middle"><input type="submit" value="Update" /></td>
               <?php } ?>
-              </select>
-            </td>
-            <td><?php echo h($post->pubDate()); ?></td>
-            <td><input type="number" name="post[position]" value="<?php echo h($post->position);?>" min="1" max="10" /></td>
-            <td class="text-center align-middle">
-              <input type="hidden" name="post[featured]" value="0" />
-              <input type="checkbox" name="post[featured]" value="1"<?php if($post->featured()) { echo " checked"; } ?> />
-            </td>
-            <td class="align-middle"><a class="action" href="<?php echo $post->link; ?>" target="_blank">View</a></td>
-            <?php if ($admin->is_admin()) { ?>
-            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/edit.php?id=' . h(u($post->id)) . '&station=' . h(u($post->station))); ?>">Edit</a></td>
-            <td class="align-middle"><a class="action" href="<?php echo url_for('/staff/emails/delete.php?id=' . h(u($post->id)) . '&station=' . h(u($post->station))); ?>">Delete</a></td>
-            <td class="align-middle"><input type="submit" value="Update" /></td>
-            <?php } ?>
             </form>
       	  </tr>
         <?php } ?>
