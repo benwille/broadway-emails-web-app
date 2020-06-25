@@ -4,7 +4,7 @@ node_modules
 vendor/*
 vendor
 .tags
-.tag1
+.tags1
 src
 src/*
 package-lock.json
