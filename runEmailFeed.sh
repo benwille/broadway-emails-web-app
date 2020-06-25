@@ -6,4 +6,3 @@ php /Users/bwille/Sites/Broadway/emails/private/cron/feed.cron.php 4;
 php /Users/bwille/Sites/Broadway/emails/private/cron/feed.cron.php 5;
 php /Users/bwille/Sites/Broadway/emails/private/cron/feed.cron.php 6;
 #sudo chmod +x scriptpath/name.sh
-#wget 'http://localhost/RSL/public/staff/posts/news_feed.php'

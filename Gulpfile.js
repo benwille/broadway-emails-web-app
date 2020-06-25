@@ -1,96 +1,88 @@
-var themename = 'emails';
 
-var gulp = require('gulp'),
-	// Prepare and optimize code etc
-	autoprefixer = require('autoprefixer'),
-	// browserSync = require('browser-sync').create(),
-	image = require('gulp-image'),
-	jshint = require('gulp-jshint'),
-	postcss = require('gulp-postcss'),
-	sass = require('gulp-sass'),
-	sourcemaps = require('gulp-sourcemaps'),
-	cleanCSS = require('gulp-clean-css'),
-	phpcs = require('gulp-phpcs'),
-	phpcbf = require('gulp-phpcbf'),
-	gutil = require('gutil'),
-	// Only work with new or updated files
-	newer = require('gulp-newer'),
-	eslint = require( 'gulp-eslint' ),
-	uglify = require( 'gulp-uglify' ),
-	rename = require( 'gulp-rename' )
+// require node_modules needed
+const gulp = require('gulp');
+const autoprefixer = require('autoprefixer');
+const image = require('gulp-image');
+const jshint = require('gulp-jshint');
+const postcss = require('gulp-postcss');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const cleanCSS = require('gulp-clean-css');
+const phpcs = require('gulp-phpcs');
+const phpcbf = require('gulp-phpcbf');
+const gutil = require('gutil');
+const newer = require('gulp-newer');
+const eslint = require( 'gulp-eslint' );
+const uglify = require( 'gulp-uglify' );
+const rename = require( 'gulp-rename' );
+const merge = require('merge-stream');
+const purgecss = require("gulp-purgecss");
+const plumber = require("gulp-plumber");
 
-	// Name of working theme folder
-	// root = '../',
-	// public = root + 'public/',
-	// css = public + 'css/dev/',
-	// js = public + 'js/',
-	// img = public + 'images/';
-	// // languages = root + 'languages/';
 
-const paths = {
-	php: {
-		src: [ 'dev/**/*.php', '!../dev/**/*.*', '!../includes/**/*.*', '!../dist/**/*.*'],
-		dest: 'clean/'
-	},
-	css: {
-		src: [ 'dev/html/stylesheets/*.css'],
-		dest: 'clean/html/stylesheets/'
-	},
-	js: {
-		src: [ 'dev/html/js/*.js'],
-		dest: 'clean/html/js/'
-	},
-	img: {
-		src: [ 'dev/html/images/' ],
-		dest: 'clean/html/images/'
-	}
-};
+// configuration file
+var cfg = require("./gulpconfig.json");
+var paths = cfg.paths;
 
-const source = {
-	css: {
-		src: 'public/stylesheets/*.css',
-		dest: 'public/stylesheets/'
-	}
-};
+// Copy over source files to src folder
+gulp.task("update-src", function () {
+	// Copy All Bootstrap Files
+	var bootstrapjs = gulp
+		.src(`${paths.node}/bootstrap/dist/js/**/*.js`)
+		.pipe(gulp.dest(`${paths.src}/js/bootstrap4`));
 
-// Minify CSS and Autoprefixer
-gulp.task('css', function() {
-	return gulp.src(paths.css.src)
-	// .pipe(sourcemaps.init())
-	// .pipe(sass({
-	// 	outputStyle: 'expanded',
-	// 	indentType: 'tab',
-	// 	indentWidth: '1'
-	// }).on('error', sass.logError))
-	.pipe(postcss([
-		autoprefixer('last 2 versions', '> 1%')
-	]))
-	.pipe(gulp.dest(paths.css.dest))
-	.pipe(cleanCSS({compatibility: 'ie8'}))
-	.pipe(rename({
-		suffix: ".min"
-	}))
-	// .pipe(sourcemaps.write(css + 'maps'))
-	.pipe(gulp.dest(paths.css.dest));
+	var bootstrap = gulp
+		.src([
+			paths.node + "/bootstrap/scss/*/*.scss",
+			paths.node + "/bootstrap/scss/*.scss"
+		])
+		.pipe(gulp.dest(paths.src + "/sass/bootstrap4/"));
+
+	return merge(bootstrapjs, bootstrap);
 });
 
-gulp.task('css-minify', function() {
-	return gulp.src(source.css.src)
+// Run:
+// gulp sass
+// Compiles SCSS files in CSS
+gulp.task("sass", function() {
+	var stream = gulp
+		.src(paths.src + "/sass/bootstrap4/bootstrap.scss")
+		.pipe(
+			plumber({
+				errorHandler: function(err) {
+					console.log(err);
+					this.emit("end");
+				}
+			})
+		)
+		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(sass({ errLogToConsole: true }))
+		.pipe(postcss([autoprefixer()]))
+		.pipe(sourcemaps.write(undefined, { sourceRoot: null }))
+		.pipe(gulp.dest(paths.css));
+	return stream;
+});
 
-	pipe(postcss([
-		autoprefixer('last 2 versions', '> 1%')
-	]))
-	.pipe(gulp.dest(source.css.dest))
-	.pipe(cleanCSS({compatibility: 'ie8'}))
-	.pipe(rename({
-		suffix: ".min"
-	}))
-	.pipe(gulp.dest(source.css.dest));
-
+gulp.task("minifycss", function() {
+	return gulp
+		.src(`${paths.css}/bootstrap.css`)
+		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(cleanCSS({ compatibility: "*" }))
+		.pipe(
+			plumber({
+				errorHandler: function(err) {
+					console.log(err);
+					this.emit("end");
+				}
+			})
+		)
+		.pipe(rename({ suffix: ".min" }))
+		// .pipe(sourcemaps.write("./"))
+		.pipe(gulp.dest(paths.css));
 });
 
 // How to do mulpitle tasks
-// gulp.task('css',['css-minify', 'css-prefix']);
+gulp.task('styles',['sass', 'minifycss', 'purgecss']);
 
 /**
  * PHP via PHP Code Sniffer.
@@ -109,8 +101,31 @@ gulp.task('php', function() {
 	}))
 	// Log all problems that were found.
 	.pipe(phpcs.reporter('log'))
-	.pipe(phpcs.reporter('file', { path:  'clean/errors.txt' }))
+	.pipe(phpcs.reporter('file', { path:  'src/errors.txt' }))
 	.pipe(gulp.dest(paths.php.dest));
+
+});
+
+/**
+ * PHP via PHP Code Sniffer.
+ */
+gulp.task('phpcbf', function() {
+
+	return gulp.src(['./html/**/*.php', './private/**/*.php'], {base:'./'})
+	// If not a rebuild, then run tasks on changed files only.
+	// .pipe(gulpif(!isRebuild, newer(paths.php.dest)))
+	.pipe(phpcbf({
+		bin: 'vendor/bin/phpcbf',
+		standard: 'WordPress',
+		show_progress: 1,
+		// colors: 1,
+		// report: 'summary',
+		warningSeverity: 0
+	}))
+	// Log all problems that were found.
+	.on('error', gutil.log)
+	// .pipe(phpcs.reporter('file', { path:  'clean/errors.txt' }))
+	.pipe(gulp.dest('./'));
 
 });
 
@@ -133,20 +148,41 @@ gulp.task('javascript', function() {
 	.pipe(gulp.dest(paths.js.dest));
 });
 
+gulp.task("purgecss", function () {
+	return gulp
+		.src([paths.css + "/bootstrap.min.css"])
+		.pipe(
+			purgecss({
+				content: [paths.public + "/**/*.php", paths.private + "/**/*.php"],
+				whitelist: ['text-white'],
+				whitelistPatterns: []
+			})
+		)
+		.pipe(rename({ basename: "theme", suffix: ".min" }))
 
-// Watch everything
-gulp.task('watch', function() {
-	browserSync.init({
-		open: 'external',
-		proxy: 'http://localhost/wordpress/',
-		port: 8080
-	});
-	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
-	gulp.watch(js + '**/*.js', ['javascript']);
-	gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']);
-	// gulp.watch(root + '**/*').on('change', browserSync.reload);
+		.pipe(gulp.dest(paths.css));
 });
 
-
-// Default task (runs at initiation: gulp --verbose)
-gulp.task('default', ['watch']);
+gulp.task("purgecss-rejected", function () {
+	return gulp
+		.src(paths.css + "/bootstrap.css")
+		.pipe(
+			rename({
+				suffix: ".rejected"
+			})
+		)
+		.pipe(
+			purgecss({
+				content: [
+					paths.public + "**/*.php",
+					paths.private + "**/*.php",
+					"!node_modules/",
+					"!sass/",
+					"!src/",
+					"!vendor/"
+				],
+				rejected: true
+			})
+		)
+		.pipe(gulp.dest(paths.css));
+});

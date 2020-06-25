@@ -1,5 +1,16 @@
 emailfeed.log
 node_modules/*
+node_modules
 vendor/*
+vendor
 *.tags
 *.tag1
+src
+src/*
+package-lock.json
+composer.lock
+private/classes/spot.class.php
+private/shared/uploads_header.php
+html/vcreative
+html/vcreative/*
+npm-shrinkwrap.json
