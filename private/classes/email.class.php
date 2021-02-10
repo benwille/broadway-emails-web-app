@@ -23,7 +23,7 @@ class Email extends DatabaseObject {
 		1 => 'X96',
 		2 => 'Mix',
 		3 => 'U92',
-		4 => 'Rewind',
+		4 => 'Bob',
 		5 => 'Eagle',
 		6 => 'ESPN',
 	];
@@ -32,7 +32,7 @@ class Email extends DatabaseObject {
 		1 => 'X96',
 		2 => 'Mix1051utah',
 		3 => 'U92slc',
-		4 => 'Rewind1007',
+		4 => '1007bobfm',
 		5 => '1015TheEagle',
 		6 => 'ESPN700Sports',
 	];
@@ -41,7 +41,7 @@ class Email extends DatabaseObject {
 		1 => 'X96Music',
 		2 => 'mix1051utah',
 		3 => 'U92SLC',
-		4 => 'Rewind100.7',
+		4 => '1007BOBFM',
 		5 => '1015TheEagle',
 		6 => 'ESPN700',
 	];
@@ -50,7 +50,7 @@ class Email extends DatabaseObject {
 		1 => 'X96',
 		2 => 'mix1051utah',
 		3 => 'U92SLC',
-		4 => 'Rewind1007fm',
+		4 => '1007bobfm',
 		5 => '1015TheEagleUT',
 		6 => 'ESPN700',
 	];
@@ -59,7 +59,7 @@ class Email extends DatabaseObject {
 		1 => 'x96fm',
 		2 => 'mix1051utah',
 		3 => 'U92SLC',
-		4 => 'Rewind1007fm',
+		4 => '1007bobfm',
 		5 => '1015TheEagleUT',
 		6 => 'ESPN700',
 	];
@@ -273,7 +273,7 @@ class Email extends DatabaseObject {
 							}
 						}
 						?>
-				  <option value="<?php echo $category_id; ?>" 
+				  <option value="<?php echo $category_id; ?>"
 											<?php
 											if ( $post->category == $category_id ) {
 												echo 'selected'; }
@@ -348,7 +348,7 @@ class Email extends DatabaseObject {
 			  <select name="post[category]">
 				<option value=""></option>
 				<?php foreach ( self::CATEGORY as $category_id => $category_name ) { ?>
-				<option value="<?php echo $category_id; ?>" 
+				<option value="<?php echo $category_id; ?>"
 										  <?php
 											if ( $post->category == $category_id ) {
 												echo 'selected'; }

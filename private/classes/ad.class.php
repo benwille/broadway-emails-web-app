@@ -25,7 +25,7 @@ class Ad extends DatabaseObject {
 		1 => 'X96',
 		2 => 'Mix',
 		3 => 'U92',
-		4 => 'Rewind',
+		4 => 'Bob',
 		5 => 'Eagle',
 		6 => 'ESPN',
 	];
@@ -157,7 +157,7 @@ class Ad extends DatabaseObject {
 			  <select name="ad[position]">
 				<option value=""></option>
 				<?php foreach ( self::POSITION as $position_id => $position_name ) { ?>
-				<option value="<?php echo $position_id; ?>" 
+				<option value="<?php echo $position_id; ?>"
 										  <?php
 											if ( $ad->position == $position_id ) {
 												echo 'selected'; }

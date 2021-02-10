@@ -14,7 +14,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
-    "browser-sync": "^2.17.6",
+    "browser-sync": "^2.26.14",
     "eslint": "^5.16.0",
     "eslint-config-wordpress": "^2.0.0",
     "gulp": "^3.9.1",
@@ -33,7 +33,7 @@
     "gulp-sourcemaps": "^2.2.0",
     "gulp-uglify": "^3.0.2",
     "gutil": "^1.6.4",
-    "jshint": "^2.9.4",
+    "jshint": "^2.12.0",
     "merge-stream": "^2.0.0"
   },
   "eslintConfig": {
@@ -46,6 +46,6 @@
     }
   },
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.6.0"
   }
 }

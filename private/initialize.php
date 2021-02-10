@@ -32,31 +32,26 @@
 
   // Load class definitions manually
   // -> Individually
-  require_once( 'classes/databaseobject.class.php' );
-  require_once( 'classes/user.class.php' );
-  require_once( 'classes/email.class.php' );
-  require_once( 'classes/session.class.php' );
-  require_once( 'classes/pagination.class.php' );
-  require_once( 'classes/parsecsv.class.php' );
-  require_once( 'classes/ad.class.php' );
+  // require_once( 'classes/databaseobject.class.php' );
+  // require_once( 'classes/user.class.php' );
+  // require_once( 'classes/email.class.php' );
+  // require_once( 'classes/session.class.php' );
+  // require_once( 'classes/pagination.class.php' );
+  // require_once( 'classes/parsecsv.class.php' );
+  // require_once( 'classes/ad.class.php' );
 
-  // TODO: Fix autoload classes in Pi
-  // -> All classes in directory
-foreach ( glob( 'classes/*.class.php' ) as $file ) {
-	require_once( $file );
-}
 
   // Autoload class definitions
-function my_autoload( $class ) {
-	if ( preg_match( '/\A\w+\Z/', $class ) ) {
-		include( 'classes/' . $class . '.class.php' );
-	}
-}
+  function my_autoload( $class ) {
+  	if ( preg_match( '/\A\w+\Z/', $class ) ) {
+      $class = strtolower($class);
+  		include( 'classes/' . $class . '.class.php' );
+  	}
+  }
   spl_autoload_register( 'my_autoload' );
 
   $database = db_connect();
+  $db = new DatabaseObject;
   DatabaseObject::set_database( $database );
 
   $session = new Session();
-
-

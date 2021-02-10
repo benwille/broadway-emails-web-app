@@ -30,7 +30,7 @@ date_default_timezone_set( 'America/Denver' );
   <dd><select name="ad[position]">
 	<option value=""></option>
 	<?php foreach ( Ad::POSITION as $position_id => $position_name ) { ?>
-	<option value="<?php echo $position_id; ?>" 
+	<option value="<?php echo $position_id; ?>"
 							  <?php
 								if ( $ad->position == $position_id ) {
 									echo 'selected'; }
@@ -48,7 +48,7 @@ date_default_timezone_set( 'America/Denver' );
   <dd><input type="checkbox" name="ad[station][]" value="1"<?php echo in_array( 1, $stations ) ? 'checked' : ''; ?> /> X96<br />
   <input type="checkbox" name="ad[station][]" value="2"<?php echo in_array( 2, $stations ) ? 'checked' : ''; ?>/> Mix<br />
   <input type="checkbox" name="ad[station][]" value="3"<?php echo in_array( 3, $stations ) ? 'checked' : ''; ?>/> U92<br />
-  <input type="checkbox" name="ad[station][]" value="4"<?php echo in_array( 4, $stations ) ? 'checked' : ''; ?>/> Rewind<br />
+  <input type="checkbox" name="ad[station][]" value="4"<?php echo in_array( 4, $stations ) ? 'checked' : ''; ?>/> Bob<br />
   <input type="checkbox" name="ad[station][]" value="5"<?php echo in_array( 5, $stations ) ? 'checked' : ''; ?>/> Eagle<br />
   <input type="checkbox" name="ad[station][]" value="6"<?php echo in_array( 6, $stations ) ? 'checked' : ''; ?>/> ESPN</dd>
 
