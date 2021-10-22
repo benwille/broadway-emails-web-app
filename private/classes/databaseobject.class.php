@@ -28,6 +28,19 @@ class DatabaseObject {
 		return $object_array;
 	}
 
+	public static function search($query, $columns, $station) {
+		// SELECT *  FROM `posts` WHERE `title` LIKE '%tickets%' OR `link` LIKE '%tickets%'OR `excerpt` LIKE '%tickets%'
+		$like = [];
+		foreach($columns as $column) {
+			$like[] = $column . " LIKE '%" . $query . "%'";
+		}
+		$sql = 'SELECT * FROM ' . static::$table_name . ' ';
+		$sql .= "WHERE station='" . self::$database->escape_string($station). "' ";
+		$sql .= "AND (" . (implode(' OR ', $like)) . ')';
+		// var_dump($sql);
+		return static::find_by_sql($sql);
+	}
+
 	public static function find_all() {
 		$sql = 'SELECT * FROM ' . static::$table_name;
 		return static::find_by_sql( $sql );
@@ -215,5 +228,3 @@ class DatabaseObject {
 	}
 
 }
-
-

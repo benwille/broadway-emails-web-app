@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 
 // require node_modules needed
 const gulp = require('gulp');
@@ -12,7 +14,7 @@ const phpcs = require('gulp-phpcs');
 const phpcbf = require('gulp-phpcbf');
 const gutil = require('gutil');
 const newer = require('gulp-newer');
-const eslint = require( 'gulp-eslint' );
+// const eslint = require( 'gulp-eslint' );
 const uglify = require( 'gulp-uglify' );
 const rename = require( 'gulp-rename' );
 const merge = require('merge-stream');
@@ -81,12 +83,9 @@ gulp.task("minifycss", function() {
 		.pipe(gulp.dest(paths.css));
 });
 
-// How to do mulpitle tasks
-gulp.task('styles',['sass', 'minifycss', 'purgecss']);
-
-/**
- * PHP via PHP Code Sniffer.
- */
+// /**
+//  * PHP via PHP Code Sniffer.
+//  */
 gulp.task('php', function() {
 
 	return gulp.src(paths.php.src)
@@ -106,9 +105,9 @@ gulp.task('php', function() {
 
 });
 
-/**
- * PHP via PHP Code Sniffer.
- */
+// /**
+//  * PHP via PHP Code Sniffer.
+//  */
 gulp.task('phpcbf', function() {
 
 	return gulp.src(['./html/**/*.php', './private/**/*.php'], {base:'./'})
@@ -129,7 +128,7 @@ gulp.task('phpcbf', function() {
 
 });
 
-// Optimize images through gulp-image
+// // Optimize images through gulp-image
 gulp.task('images', function() {
 	return gulp.src(img + '**/*.{jpg,JPG,png}')
 	.pipe(newer(img))
@@ -138,7 +137,7 @@ gulp.task('images', function() {
 	.pipe(gulp.dest(paths.img.dest));
 });
 
-// JavaScript
+// // JavaScript
 gulp.task('javascript', function() {
 	return gulp.src(paths.js.src)
 	.pipe(jshint())
@@ -148,9 +147,9 @@ gulp.task('javascript', function() {
 	.pipe(gulp.dest(paths.js.dest));
 });
 
-gulp.task("purgecss", function () {
+gulp.task('purgecss', function () {
 	return gulp
-		.src([paths.css + "/bootstrap.min.css"])
+		.src(paths.css + "/bootstrap.min.css")
 		.pipe(
 			purgecss({
 				content: [paths.public + "/**/*.php", paths.private + "/**/*.php"],
@@ -186,3 +185,6 @@ gulp.task("purgecss-rejected", function () {
 		)
 		.pipe(gulp.dest(paths.css));
 });
+
+// // How to do mulpitle tasks
+gulp.task('styles', gulp.series('sass', 'minifycss', 'purgecss'));

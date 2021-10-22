@@ -14,11 +14,11 @@ This web app allows for the easy creation of Broadway Media station emails forma
 
 In order to run this web app you'll need:
 
-- A server. Use MAMP/WAMP or Docker
-  - [Windows](https://docs.docker.com/windows/started)
-  - [OS X](https://docs.docker.com/mac/started/)
-  - [Linux](https://docs.docker.com/linux/started/)
-- PHP version 7.3 or higher
+-   A server. Use MAMP/WAMP or Docker
+    -   [Windows](https://docs.docker.com/windows/started)
+    -   [OS X](https://docs.docker.com/mac/started/)
+    -   [Linux](https://docs.docker.com/linux/started/)
+-   PHP version 7.3 or higher
 
 ### Usage
 
@@ -63,67 +63,71 @@ gulp phpcbf
 
 #### Volumes
 
-- `~/Sites/Broadway/emails` - File location
+-   `~/Sites/Broadway/emails` - File location
 
 #### Useful File Locations
 
-- `~/Sites/Broadway/emails/runEmailFeed.sh` - script to run news feed checks
+-   `~/Sites/Broadway/emails/runEmailFeed.sh` - script to run news feed checks
 
-- `~/Sites/Broadway/emails/emailfeed.log` - log for news feed script showing success and errors
+-   `~/Sites/Broadway/emails/emailfeed.log` - log for news feed script showing success and errors
 
 ## Built With
 
-- Node v10.21.0
-- npm v6.14.4
-- PHP v7.3
-- jQuery v3.3.1
+-   Node v10.21.0
+-   npm v6.14.4
+-   PHP v7.3
+-   jQuery v3.3.1
 
 ## Find Me
 
-- [GitHub](https://github.com/benwille)
-- [Website](https://bwille.com/)
+-   [GitHub](https://github.com/benwille)
+-   [Website](https://bwille.com/)
 
 ## Versioning
 
 We use [SourceTree](https://www.sourcetreeapp.com/) for versioning.
 
+### v3.0.0
+
+-   Added a search bar in each of the station's index page. You can use it to search for anything in the title, link, or excerpt for that station. This allows you find posts that are no longer in the top 10 and add them to featured.
+
 ### v2.1.1
 
-- Removed unused files
-- Changed Public folder to HTML
-- Added .editorconfig and .eslintrc files for formatting
+-   Removed unused files
+-   Changed Public folder to HTML
+-   Added .editorconfig and .eslintrc files for formatting
 
 ### v2.1.0
 
-- Added AJAX functions for multiple changes with one update (June 23, 2020)
+-   Added AJAX functions for multiple changes with one update (June 23, 2020)
 
 ### v2.0.0
 
-- Created dark version of emails (December 27, 2019)
+-   Created dark version of emails (December 27, 2019)
 
 ### v1.3.0
 
-- Added vCreative test sections. Not for public use (December 16, 2019)
+-   Added vCreative test sections. Not for public use (December 16, 2019)
 
 ### v1.2.0
 
-- Added Clean, Dist, and Dev folders to prepare code for release (June 19, 2019)
+-   Added Clean, Dist, and Dev folders to prepare code for release (June 19, 2019)
 
 ### v1.1.0
 
-- Added Gulpfile.js and gulp tasks - see **GULP TASKS** above (May 17, 2019)
+-   Added Gulpfile.js and gulp tasks - see **GULP TASKS** above (May 17, 2019)
 
 ### v1.0.0
 
-- Initial version (December 31, 2018)
+-   Initial version (December 31, 2018)
 
 ## Upcoming Development (To-Dos)
 
-- Update the backend design to a modern bootstrap template
+-   Update the backend design to a modern bootstrap template
 
 ## Authors
 
-- **Ben Wille** - _Initial work_ - [Website](https://bwille.com/)
+-   **Ben Wille** - _Initial work_ - [Website](https://bwille.com/)
 
 ## License
 
@@ -131,5 +135,5 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-- Andrew Maxwell
-- **Billie Thompson** - _README.md template_ - [PurpleBooth](https://github.com/PurpleBooth)
+-   Andrew Maxwell
+-   **Billie Thompson** - _README.md template_ - [PurpleBooth](https://github.com/PurpleBooth)
