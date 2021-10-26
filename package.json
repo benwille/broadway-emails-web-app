@@ -1,6 +1,6 @@
 {
 	"name": "bway_emails",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Web App to generate Broadway Media emails",
 	"main": "index.php",
 	"scripts": {

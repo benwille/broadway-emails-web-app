@@ -87,6 +87,10 @@ gulp phpcbf
 
 We use [SourceTree](https://www.sourcetreeapp.com/) for versioning.
 
+### v3.0.1
+
+-   Patched an bug that made the css file not pull correctly into the final email on some devices. The code pulled the station name which was capitalized, the CSS file is lower case. Fixed with `strtolower()` function.
+
 ### v3.0.0
 
 -   Added a search bar in each of the station's index page. You can use it to search for anything in the title, link, or excerpt for that station. This allows you find posts that are no longer in the top 10 and add them to featured.
