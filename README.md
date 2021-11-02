@@ -87,6 +87,11 @@ gulp phpcbf
 
 We use [SourceTree](https://www.sourcetreeapp.com/) for versioning.
 
+### v3.0.2
+
+-   Added bob.css file for new Bob station
+-   Fixed an issue with going to the main page and it redirecting to a page that needed a $\_GET, but sometimes didn't have one
+
 ### v3.0.1
 
 -   Patched an bug that made the css file not pull correctly into the final email on some devices. The code pulled the station name which was capitalized, the CSS file is lower case. Fixed with `strtolower()` function.
